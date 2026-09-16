@@ -1,0 +1,2 @@
+experiment_id,architecture,commit_sha,benchmark,vivado_version,fpga_part,frequency_mhz,cycles,retired_instructions,useful_macs,mac_per_cycle,mmac_per_s,execution_us,lut,ff,bram18,dsp48,bufg,wns_ns,tns_ns,hold_wns_ns,setup_failures,total_power_w,dynamic_power_w,energy_uj,mac_per_joule,correct,expected_result,actual_result,notes
+baseline-prior-work,H1.3b-T2,2731a7820988863829c7074acd474ea06902e8f2,Stage H memory-fed N128,2026.1,xc7a35tcpg236-1,93,263,,128,0.486692,45.26,2.827957,2008,1812,2,5,1,0.230,0,0.059,0,,,,,true,,,Prior work — summer-project-final
