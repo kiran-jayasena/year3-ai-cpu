@@ -32,3 +32,10 @@ compared with the frozen baseline using correctness, performance, timing,
 resource, power and energy evidence.
 
 This setup commit introduces no new CPU architecture or AI accelerator.
+
+## Current FYP status
+
+- The immutable summer baseline is established at `fyp-baseline`.
+- Year 3 repository and evidence-handling infrastructure is established.
+- FYP-EXP-001 baseline characterisation is prepared.
+- No assessed architecture change has been made yet.
