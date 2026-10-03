@@ -1,0 +1,77 @@
+{
+  "algorithm": "SHA-256",
+  "checkpoint_sha256": "9216dc089e92c480214db348c80bd6e1237ac14ff2a665345b228123be47759c",
+  "file_count": 14,
+  "files": [
+    {
+      "bytes": 16,
+      "path": "c_arrays_source/conv1_bias.f32le",
+      "sha256": "93653fbb03664608d21792749fa447033f1bb8d681aaf92408352b020d206437"
+    },
+    {
+      "bytes": 144,
+      "path": "c_arrays_source/conv1_weight.f32le",
+      "sha256": "bec08f1bdc19005808a44e670a7b36bfab4dcb12d5e02084a4099469e4e365d6"
+    },
+    {
+      "bytes": 32,
+      "path": "c_arrays_source/conv2_bias.f32le",
+      "sha256": "ac84b1a95ab1f216805c94916dd55eddf830b6fc731f27e8dd63169aa0ec37e5"
+    },
+    {
+      "bytes": 1152,
+      "path": "c_arrays_source/conv2_weight.f32le",
+      "sha256": "1bace86a2babf06b695db539bca20b2cf8aafb861d1b0b92a4b53af887121b4f"
+    },
+    {
+      "bytes": 40,
+      "path": "c_arrays_source/fc_bias.f32le",
+      "sha256": "2756b308f81c3938b5b75aecabdaff8ad7601f7416a78b0aec87c8ba7185173e"
+    },
+    {
+      "bytes": 8000,
+      "path": "c_arrays_source/fc_weight.f32le",
+      "sha256": "eaad4c56a98583a3a07bce8b026e9427fd4169b5952ff7c1b21fda0e8b2574d3"
+    },
+    {
+      "bytes": 291,
+      "path": "c_arrays_source/README.md",
+      "sha256": "7041c48c9b2bd67b6c7a41701420d6379c9860581bf75be91a081e8298c3fe91"
+    },
+    {
+      "bytes": 144,
+      "path": "parameters/conv1_bias.npy",
+      "sha256": "e23ab57ced4ce5b4bf32f8b61e085775d71cc691800a8cb3e7ad771b52cffd59"
+    },
+    {
+      "bytes": 272,
+      "path": "parameters/conv1_weight.npy",
+      "sha256": "58e3aa9b4ecd84f542a6c3f6a21910671ac0d8748dfebf1a0e4a9dea3747b126"
+    },
+    {
+      "bytes": 160,
+      "path": "parameters/conv2_bias.npy",
+      "sha256": "1f17d39d683d21caaba9609f9ff2ab799d11a18e43b852ebfc83be6a5f1b10b1"
+    },
+    {
+      "bytes": 1280,
+      "path": "parameters/conv2_weight.npy",
+      "sha256": "97862d43deba8de1db3ac2b52ec0931c950027124bcf36bf570f7e9c4cf74da9"
+    },
+    {
+      "bytes": 168,
+      "path": "parameters/fc_bias.npy",
+      "sha256": "3304097e8a82a26944659dbafa6b8b9950bb3b1be7b500d8bc300be7f41d9044"
+    },
+    {
+      "bytes": 8128,
+      "path": "parameters/fc_weight.npy",
+      "sha256": "224e68dbe5b6e55fa6666a905c80f75b1ceaad8e6cdb5fc28f645e227d74fcbd"
+    },
+    {
+      "bytes": 1796,
+      "path": "parameters_manifest.json",
+      "sha256": "4357bfb65c2daf603ff4c1582a951322f18c2c98efb7db5486a65c7df94c563b"
+    }
+  ]
+}

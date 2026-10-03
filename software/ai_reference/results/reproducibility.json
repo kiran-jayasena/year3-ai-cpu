@@ -1,0 +1,21 @@
+{
+  "aggregate_sha256": "7d3f776e35997b4000232faeeebbdf104bc7928bc989c9a156a40c1c8bf2ded9",
+  "byte_identical": true,
+  "canonical_matches_regeneration": true,
+  "checkpoint_sha256": "9216dc089e92c480214db348c80bd6e1237ac14ff2a665345b228123be47759c",
+  "compared_file_count": 147,
+  "method": "Two fresh checkpoint reloads and generations were compared file-by-file using SHA-256.",
+  "selected_indices": [
+    3,
+    2,
+    1,
+    30,
+    4,
+    8,
+    11,
+    0,
+    61,
+    7
+  ],
+  "status": "PASS"
+}

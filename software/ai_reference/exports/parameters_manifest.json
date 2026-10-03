@@ -1,0 +1,74 @@
+{
+  "binary_format": "raw little-endian IEEE-754 float32, no header",
+  "checkpoint_sha256": "9216dc089e92c480214db348c80bd6e1237ac14ff2a665345b228123be47759c",
+  "parameters": [
+    {
+      "c_array_source": "c_arrays_source/conv1_weight.f32le",
+      "dtype": "float32",
+      "elements": 36,
+      "npy": "parameters/conv1_weight.npy",
+      "shape": [
+        4,
+        1,
+        3,
+        3
+      ],
+      "state_dict_name": "conv1.weight"
+    },
+    {
+      "c_array_source": "c_arrays_source/conv1_bias.f32le",
+      "dtype": "float32",
+      "elements": 4,
+      "npy": "parameters/conv1_bias.npy",
+      "shape": [
+        4
+      ],
+      "state_dict_name": "conv1.bias"
+    },
+    {
+      "c_array_source": "c_arrays_source/conv2_weight.f32le",
+      "dtype": "float32",
+      "elements": 288,
+      "npy": "parameters/conv2_weight.npy",
+      "shape": [
+        8,
+        4,
+        3,
+        3
+      ],
+      "state_dict_name": "conv2.weight"
+    },
+    {
+      "c_array_source": "c_arrays_source/conv2_bias.f32le",
+      "dtype": "float32",
+      "elements": 8,
+      "npy": "parameters/conv2_bias.npy",
+      "shape": [
+        8
+      ],
+      "state_dict_name": "conv2.bias"
+    },
+    {
+      "c_array_source": "c_arrays_source/fc_weight.f32le",
+      "dtype": "float32",
+      "elements": 2000,
+      "npy": "parameters/fc_weight.npy",
+      "shape": [
+        10,
+        200
+      ],
+      "state_dict_name": "fc.weight"
+    },
+    {
+      "c_array_source": "c_arrays_source/fc_bias.f32le",
+      "dtype": "float32",
+      "elements": 10,
+      "npy": "parameters/fc_bias.npy",
+      "shape": [
+        10
+      ],
+      "state_dict_name": "fc.bias"
+    }
+  ],
+  "storage_order": "C row-major"
+}

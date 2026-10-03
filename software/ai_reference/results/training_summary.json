@@ -1,0 +1,165 @@
+{
+  "checkpoint": "artifacts\\small_cnn_reference.pt",
+  "checkpoint_sha256": "9216dc089e92c480214db348c80bd6e1237ac14ff2a665345b228123be47759c",
+  "environment": {
+    "dataset": "MNIST",
+    "deterministic_algorithms": true,
+    "device": "cpu",
+    "mkldnn_enabled": false,
+    "numpy": "2.5.3",
+    "platform": "win32",
+    "preprocessing": "Convert uint8 pixels to FP32 and divide by 255.0; no resize or normalization.",
+    "python": "3.14.0",
+    "pytorch": "2.14.1+cpu",
+    "random_seed": 349,
+    "torch_num_threads": 1
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "test_accuracy": 0.9379,
+      "test_loss": 0.21571370191574096,
+      "train_loss": 0.4781580889383952
+    },
+    {
+      "epoch": 2,
+      "test_accuracy": 0.9565,
+      "test_loss": 0.14271897762566804,
+      "train_loss": 0.19014079615871113
+    },
+    {
+      "epoch": 3,
+      "test_accuracy": 0.9647,
+      "test_loss": 0.11844087868332863,
+      "train_loss": 0.141789020400246
+    }
+  ],
+  "model_statistics": {
+    "architecture": {
+      "conv1": {
+        "in_channels": 1,
+        "kernel_size": 3,
+        "out_channels": 4,
+        "output": [
+          4,
+          26,
+          26
+        ],
+        "padding": 0,
+        "stride": 1
+      },
+      "conv2": {
+        "in_channels": 4,
+        "kernel_size": 3,
+        "out_channels": 8,
+        "output": [
+          8,
+          11,
+          11
+        ],
+        "padding": 0,
+        "stride": 1
+      },
+      "flatten_features": 200,
+      "fully_connected": {
+        "in_features": 200,
+        "out_features": 10
+      },
+      "input": [
+        1,
+        28,
+        28
+      ],
+      "pool1": {
+        "kernel_size": 2,
+        "output": [
+          4,
+          13,
+          13
+        ],
+        "stride": 2
+      },
+      "pool2": {
+        "kernel_size": 2,
+        "output": [
+          8,
+          5,
+          5
+        ],
+        "stride": 2
+      }
+    },
+    "intermediate_shapes_excluding_batch": {
+      "conv1": [
+        4,
+        26,
+        26
+      ],
+      "conv2": [
+        8,
+        11,
+        11
+      ],
+      "flatten": [
+        200
+      ],
+      "input": [
+        1,
+        28,
+        28
+      ],
+      "logits": [
+        10
+      ],
+      "pool1": [
+        4,
+        13,
+        13
+      ],
+      "pool2": [
+        8,
+        5,
+        5
+      ],
+      "relu1": [
+        4,
+        26,
+        26
+      ],
+      "relu2": [
+        8,
+        11,
+        11
+      ]
+    },
+    "largest_intermediate": {
+      "elements": 2704,
+      "fp32_bytes": 10816,
+      "stage": "conv1"
+    },
+    "macs_per_inference": {
+      "by_layer": {
+        "conv1": 24336,
+        "conv2": 34848,
+        "fully_connected": 2000
+      },
+      "method": "Conv MACs = output_channels * output_height * output_width * input_channels * kernel_height * kernel_width; FC MACs = inputs * outputs. Bias additions, ReLU, comparisons, and pooling are not counted as MACs.",
+      "total": 61184
+    },
+    "parameter_storage_fp32_bytes": 9384,
+    "parameter_storage_int8_estimate_bytes": 2346,
+    "total_parameters": 2346
+  },
+  "selected_golden_indices": [
+    3,
+    2,
+    1,
+    30,
+    4,
+    8,
+    11,
+    0,
+    61,
+    7
+  ]
+}

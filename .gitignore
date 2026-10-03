@@ -59,6 +59,8 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+.venv/
+software/ai_reference/data/
 
 # Local VS Code settings
 .vscode/

@@ -1,0 +1,88 @@
+{
+  "checkpoint_sha256": "9216dc089e92c480214db348c80bd6e1237ac14ff2a665345b228123be47759c",
+  "dataset": "MNIST",
+  "dataset_index": 61,
+  "dataset_split": "test",
+  "ground_truth_label": 8,
+  "predicted_class": 8,
+  "prediction_correct": true,
+  "preprocessing": "Convert uint8 pixels to FP32 and divide by 255.0; no resize or normalization.",
+  "sample_number": 8,
+  "tensors": {
+    "conv1": {
+      "dtype": "float32",
+      "shape": [
+        4,
+        26,
+        26
+      ]
+    },
+    "conv2": {
+      "dtype": "float32",
+      "shape": [
+        8,
+        11,
+        11
+      ]
+    },
+    "flatten": {
+      "dtype": "float32",
+      "shape": [
+        200
+      ]
+    },
+    "input": {
+      "dtype": "float32",
+      "shape": [
+        1,
+        28,
+        28
+      ]
+    },
+    "logits": {
+      "dtype": "float32",
+      "shape": [
+        10
+      ]
+    },
+    "pool1": {
+      "dtype": "float32",
+      "shape": [
+        4,
+        13,
+        13
+      ]
+    },
+    "pool2": {
+      "dtype": "float32",
+      "shape": [
+        8,
+        5,
+        5
+      ]
+    },
+    "raw_input_uint8": {
+      "dtype": "uint8",
+      "shape": [
+        28,
+        28
+      ]
+    },
+    "relu1": {
+      "dtype": "float32",
+      "shape": [
+        4,
+        26,
+        26
+      ]
+    },
+    "relu2": {
+      "dtype": "float32",
+      "shape": [
+        8,
+        11,
+        11
+      ]
+    }
+  }
+}
