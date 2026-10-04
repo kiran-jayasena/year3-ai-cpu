@@ -1,0 +1,25 @@
+{
+  "jira_task": "KAN-45",
+  "baseline_tag": "fyp-baseline",
+  "baseline_commit": "2731a7820988863829c7074acd474ea06902e8f2",
+  "clean_clone_path": "C:\\FPGA\\kan45-clean-rebuild",
+  "clean_git_status": "## HEAD (no branch)",
+  "git_describe": "fyp-baseline",
+  "vivado_version": "2026.1",
+  "xsim_version": "Vivado Simulator v2026.1",
+  "fpga_part": "xc7a35tcpg236-1",
+  "python_version": "3.14.0",
+  "build_pass": true,
+  "simulation_pass": true,
+  "regression_checks": 4254,
+  "regression_failures": 0,
+  "matches_kan46": true,
+  "implementation_attempted": false,
+  "implementation_pass": null,
+  "hidden_dependencies_found": [
+    "fyp-baseline tag is local-only in the main repository and was absent from the fresh remote clone; the tag ref was fetched into the clone only.",
+    "scripts/fyp/capture_environment.ps1 is absent at the historical fyp-baseline tag; environment was captured manually.",
+    "No generated simulator or Vivado artifacts were required by the focused simulation."
+  ],
+  "notes": "The clean-clone H1.3b-T2 focused test passed 4254/0 using only tracked baseline source files and installed Vivado tools."
+}

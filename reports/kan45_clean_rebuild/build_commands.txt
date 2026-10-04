@@ -1,0 +1,28 @@
+KAN-45 commands executed
+
+Main-repository inspection:
+  git status --short --branch
+  git rev-parse HEAD
+  git branch --show-current
+  Test-Path C:\FPGA\kan45-clean-rebuild
+
+Clean clone:
+  git clone C:\FPGA\systemverilog-fpga-cpu C:\FPGA\kan45-clean-rebuild
+  git fetch C:\FPGA\year3-ai-cpu refs/tags/fyp-baseline:refs/tags/fyp-baseline
+  git checkout --detach fyp-baseline
+  git rev-parse HEAD
+  git status --short --branch
+  git describe --tags --always
+  git branch --show-current
+
+Environment:
+  powershell -ExecutionPolicy Bypass -File scripts\fyp\capture_environment.ps1 -OutputPath C:\FPGA\kan45-clean-rebuild\kan45_environment.txt
+  The helper was absent at the historical fyp-baseline tag (documented deviation).
+  Environment fields were then captured manually with PowerShell, git, python, vivado.bat -version and xsim.bat -version.
+
+Clean-clone baseline regression:
+  xvlog -sv rtl/cpu_defs_pkg.sv tb/dot4acc_reference_pkg.sv rtl/bram_instr_mem.sv rtl/bram_data_mem.sv rtl/dot4acc_pipeline.sv rtl/cpu_core_pipeline_dot4acc_memopt_h13b_timingopt_t2.sv tb/tb_cpu_core_pipeline_dot4acc_memopt_h13b_timingopt_t2.sv
+  xelab tb_cpu_core_pipeline_dot4acc_memopt_h13b_timingopt_t2 -s kan45_baseline_regression_sim
+  xsim kan45_baseline_regression_sim -runall
+
+No synthesis or implementation was attempted. Simulation/regression is the minimum KAN-45 requirement; the historical implementation flow was explicitly optional.

@@ -1,0 +1,34 @@
+KAN-45 clean-clone Git state
+
+Clone source:
+  C:\FPGA\systemverilog-fpga-cpu
+Clean clone:
+  C:\FPGA\kan45-clean-rebuild
+
+Formal baseline tag:
+  fyp-baseline
+Resolved HEAD:
+  2731a7820988863829c7074acd474ea06902e8f2
+Describe:
+  fyp-baseline
+Branch:
+  (detached HEAD; git branch --show-current returned empty)
+Status after checkout:
+  ## HEAD (no branch)
+
+Commit:
+  commit 2731a7820988863829c7074acd474ea06902e8f2
+  Author: Kiran Jayasena <kiranjayasena@gmail.com>
+  AuthorDate: Tue Aug 11 12:25:07 2026 +0100
+  CommitDate: Tue Aug 11 12:25:07 2026 +0100
+  Subject: docs(fpga): consolidate final project results
+
+Tag note:
+  The fresh clone contained summer-project-final but not the local-only fyp-baseline tag.
+  The existing fyp-baseline ref was fetched from C:\FPGA\year3-ai-cpu into this clone only.
+  The main repository was not modified.
+
+Post-build clone status:
+  ## HEAD (no branch)
+  ?? baseline_regression.log
+  ?? kan45_environment.txt

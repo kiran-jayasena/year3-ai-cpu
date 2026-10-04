@@ -1,0 +1,19 @@
+timestamp: 2026-10-04T13:16:35.1244922+01:00
+windows_version: Microsoft Windows 11 Pro 10.0.26200 build 26200
+powershell_version: 5.1.26100.9444
+git_version: git version 2.55.0.windows.1
+python_version: Python 3.14.0
+vivado_version:
+vivado v2026.1 (64-bit)
+Tool Version Limit: 2026.06
+SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+xsim_version:
+Vivado Simulator v2026.1
+Copyright 1986-2026 Xilinx, Inc. All Rights Reserved.
+fpga_part: xc7a35tcpg236-1
+git_commit: 2731a7820988863829c7074acd474ea06902e8f2
+git_status: ## HEAD (no branch)
