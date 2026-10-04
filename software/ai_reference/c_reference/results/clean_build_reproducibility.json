@@ -1,0 +1,8 @@
+{
+  "compiler": "gcc.exe (MinGW.org GCC-6.3.0-1) 6.3.0",
+  "executable_sha256": "32f433f5403a554754a221402cc5051b21b17b64adda9cef25f2fd99948f1cef",
+  "method": "Ran compare_c_reference.py --clean twice and compared the executable and both result files by SHA-256.",
+  "results_json_sha256": "8a5adb1caee82e68f0b3a0e92ac09f14f475e2cbbfa22582c25d4158bb00925e",
+  "results_markdown_sha256": "a936163781d50a537c59ecfe44902344d0420d08785d120341a1c6659b09ec3a",
+  "status": "PASS"
+}

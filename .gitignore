@@ -61,6 +61,7 @@ __pycache__/
 *.pyd
 .venv/
 software/ai_reference/data/
+software/ai_reference/c_reference/build/
 
 # Local VS Code settings
 .vscode/

@@ -1,0 +1,149 @@
+{
+  "ai_harness": {
+    "available": false,
+    "reason": "KAN-50 is still To Do; no processor MNIST harness is present in the repository."
+  },
+  "core": "cpu_core_pipeline_dot4acc_memopt_h13b_timingopt_t2",
+  "counter_semantics": {
+    "disabled": "both counters hold when enable=0",
+    "measurement_bracket": "external enable gating; each test stops after its sentinel STORE retirement",
+    "reset": "both counters clear on rst=1",
+    "retired_instructions": "increments once for each normal valid retirement, deferred-load retirement, or DOT completion retirement",
+    "total_cycles": "increments once per clock edge when rst=0 and enable=1"
+  },
+  "raw_run_files": [
+    "raw_repeated_runs_run1.csv",
+    "raw_repeated_runs_run2.csv"
+  ],
+  "raw_run_sha256": {
+    "raw_repeated_runs_run1.csv": "46413ea668139942276a4614dff0629d61a9e16726dc85622619a78123f941cb",
+    "raw_repeated_runs_run2.csv": "46413ea668139942276a4614dff0629d61a9e16726dc85622619a78123f941cb"
+  },
+  "regression": {
+    "command": "Vivado xvlog/xelab/xsim on tb/tb_cpu_core_pipeline_dot4acc_memopt_h13b_timingopt_t2.sv",
+    "evidence": "focused_existing_core_regression.log",
+    "note": "The focused existing H1.3b/T2 architectural regression completed with 4,254 checks and 0 failures.",
+    "status": "PASS"
+  },
+  "rows": [
+    {
+      "cycle_max": 11,
+      "cycle_min": 11,
+      "cycle_variation": 0,
+      "cycles": [
+        11,
+        11,
+        11,
+        11,
+        11
+      ],
+      "expected_retired": 6,
+      "functional_pass": true,
+      "measured_retired": [
+        6,
+        6,
+        6,
+        6,
+        6
+      ],
+      "result": "PASS",
+      "retired_max": 6,
+      "retired_min": 6,
+      "retired_pass": true,
+      "retired_variation": 0,
+      "stable_cycles": true,
+      "stable_retired": true,
+      "test": "straight_line_arithmetic"
+    },
+    {
+      "cycle_max": 26,
+      "cycle_min": 26,
+      "cycle_variation": 0,
+      "cycles": [
+        26,
+        26,
+        26,
+        26,
+        26
+      ],
+      "expected_retired": 14,
+      "functional_pass": true,
+      "measured_retired": [
+        14,
+        14,
+        14,
+        14,
+        14
+      ],
+      "result": "PASS",
+      "retired_max": 14,
+      "retired_min": 14,
+      "retired_pass": true,
+      "retired_variation": 0,
+      "stable_cycles": true,
+      "stable_retired": true,
+      "test": "fixed_count_loop"
+    },
+    {
+      "cycle_max": 13,
+      "cycle_min": 13,
+      "cycle_variation": 0,
+      "cycles": [
+        13,
+        13,
+        13,
+        13,
+        13
+      ],
+      "expected_retired": 5,
+      "functional_pass": true,
+      "measured_retired": [
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "result": "PASS",
+      "retired_max": 5,
+      "retired_min": 5,
+      "retired_pass": true,
+      "retired_variation": 0,
+      "stable_cycles": true,
+      "stable_retired": true,
+      "test": "taken_branch_control_flow"
+    },
+    {
+      "cycle_max": 10,
+      "cycle_min": 10,
+      "cycle_variation": 0,
+      "cycles": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "expected_retired": 4,
+      "functional_pass": true,
+      "measured_retired": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "result": "PASS",
+      "retired_max": 4,
+      "retired_min": 4,
+      "retired_pass": true,
+      "retired_variation": 0,
+      "stable_cycles": true,
+      "stable_retired": true,
+      "test": "load_store"
+    }
+  ],
+  "run_count_per_test": 5,
+  "simulator_repetition_count": 2,
+  "status": "PASS"
+}
