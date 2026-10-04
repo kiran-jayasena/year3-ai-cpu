@@ -1,0 +1,6 @@
+run,output0,output1,output2,output3,cycles,retired,output_pass
+1,-116,15,-97,90,1464,962,PASS
+2,-116,15,-97,90,1464,962,PASS
+3,-116,15,-97,90,1464,962,PASS
+4,-116,15,-97,90,1464,962,PASS
+5,-116,15,-97,90,1464,962,PASS

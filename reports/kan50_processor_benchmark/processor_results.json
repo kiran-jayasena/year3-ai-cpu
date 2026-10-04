@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "expected_outputs": [
+    -116,
+    15,
+    -97,
+    90
+  ],
+  "measured_outputs": [
+    [
+      -116,
+      15,
+      -97,
+      90
+    ],
+    [
+      -116,
+      15,
+      -97,
+      90
+    ],
+    [
+      -116,
+      15,
+      -97,
+      90
+    ],
+    [
+      -116,
+      15,
+      -97,
+      90
+    ],
+    [
+      -116,
+      15,
+      -97,
+      90
+    ]
+  ],
+  "exact_integer_match": true,
+  "cycles": [
+    1464,
+    1464,
+    1464,
+    1464,
+    1464
+  ],
+  "retired_instructions": [
+    962,
+    962,
+    962,
+    962,
+    962
+  ],
+  "cycle_min": 1464,
+  "cycle_max": 1464,
+  "retired_min": 962,
+  "retired_max": 962,
+  "output_stable": true,
+  "cycle_stable": true,
+  "retired_stable": true,
+  "simulator_repetition_count": 2,
+  "runs_per_simulator": 5,
+  "raw_run_sha256": {
+    "repeated_runs_run1.csv": "61d5bfc864dc2a5e94889049a043ddaee36bd276b675c58f9cbf08f210ab25cb",
+    "repeated_runs_run2.csv": "61d5bfc864dc2a5e94889049a043ddaee36bd276b675c58f9cbf08f210ab25cb"
+  },
+  "program_words": 33,
+  "data_words_used": 114,
+  "mac_equivalent_operations": 36,
+  "regression": {
+    "status": "PASS",
+    "checks": 4254,
+    "failures": 0,
+    "evidence": "existing_core_regression.log",
+    "command": "Vivado xvlog/xelab/xsim on tb/tb_cpu_core_pipeline_dot4acc_memopt_h13b_timingopt_t2.sv"
+  }
+}

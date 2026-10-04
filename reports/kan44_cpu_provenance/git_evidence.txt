@@ -1,0 +1,37 @@
+KAN-44 Git evidence captured 2026-10-04
+
+Repository remote:
+  summer-source C:\FPGA\systemverilog-fpga-cpu (fetch)
+  summer-source C:\FPGA\systemverilog-fpga-cpu (push)
+
+Current branch and HEAD:
+  fyp-development
+  c6e8896c7cee27c5deb94dd29b49267f9a9efa7c KAN 51 - Validate cycle/instruction instrumentation
+
+Relevant tags:
+  summer-project-final -> 2731a7820988863829c7074acd474ea06902e8f2
+  fyp-baseline tag object 047d90a8275472451e7acddf0a2bba41d10f18ee -> 2731a7820988863829c7074acd474ea06902e8f2
+
+Candidate file history:
+  b90a3dca8a5fb3017a97d705abda9cbb498f88a3 2026-08-10T14:35:36+01:00 Kiran Jayasena exp(fpga): evaluate H1.3b-T2 timing recovery
+  This commit added the candidate CPU RTL, wrapper, implementation script, focused CPU testbench and Stage H benchmark testbench.
+
+Candidate file comparison:
+  git diff --quiet b90a3dc HEAD -- rtl/cpu_core_pipeline_dot4acc_memopt_h13b_timingopt_t2.sv rtl/fpga_top_pipeline_dot4acc_memopt_h13b_timingopt_t2.sv tb/tb_cpu_core_pipeline_dot4acc_memopt_h13b_timingopt_t2.sv
+  Result: unchanged (exit 0)
+
+Current branch commits after the inherited snapshot include:
+  6dc683e chore(fyp): establish Year 3 project baseline and workflow
+  6824777 docs(fyp): prepare EXP-001 baseline characterisation
+  c790159 KAN-349 establish reproducible MNIST golden reference
+  c6e8896 KAN 51 - Validate cycle/instruction instrumentation
+
+Relevant historical evidence:
+  reports/dot4acc_stage_h_memory_feed.md
+  reports/dot4acc_stage_h/final_t2_93mhz/results.csv
+  tb/tb_cpu_core_pipeline_dot4acc_memopt_h13b_timingopt_t2.sv
+  tb/tb_dot4acc_stage_h13b_timingopt_t2_benchmark.sv
+  docs/reproducibility.md
+  docs/isa.md
+
+No tags, branches, commits or history were created, moved, amended or rewritten by KAN-44.

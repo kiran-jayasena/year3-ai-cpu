@@ -1,0 +1,133 @@
+{
+  "source_layer": "Conv2",
+  "source_sample_index": 2,
+  "output_channel": 0,
+  "input_channel": 0,
+  "output_tile": {
+    "y": [
+      0,
+      1
+    ],
+    "x": [
+      0,
+      1
+    ]
+  },
+  "mac_equivalent_operations": 36,
+  "input_shape": [
+    4,
+    13,
+    13
+  ],
+  "weight_shape": [
+    8,
+    4,
+    3,
+    3
+  ],
+  "selected_input_shape": [
+    4,
+    4
+  ],
+  "selected_weight_shape": [
+    3,
+    3
+  ],
+  "input_scale": 32,
+  "weight_scale": 16,
+  "product_scale": 512,
+  "rounding": "IEEE-754 binary64 conversion followed by round-to-nearest-even",
+  "overflow": "32-bit two's-complement wrap; proven absent for this generated dataset",
+  "accumulator": "signed 32-bit integer",
+  "multiply": "software repeated addition of input magnitude, with conditional subtraction for negative weights",
+  "program_words": 33,
+  "data_words_used": 114,
+  "expected_outputs": [
+    -116,
+    15,
+    -97,
+    90
+  ],
+  "input_q_values": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    1,
+    44,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    7,
+    0,
+    0,
+    2,
+    0,
+    1,
+    44,
+    0,
+    7,
+    60
+  ],
+  "weight_q_values": [
+    0,
+    -5,
+    -9,
+    0,
+    0,
+    0,
+    -4,
+    0,
+    0,
+    0,
+    -5,
+    -9,
+    0,
+    0,
+    0,
+    -4,
+    0,
+    0,
+    0,
+    -5,
+    -9,
+    0,
+    0,
+    0,
+    -4,
+    0,
+    0,
+    0,
+    -5,
+    -9,
+    0,
+    0,
+    0,
+    -4,
+    0,
+    0
+  ],
+  "bias_q": -119,
+  "files": {
+    "program": "programs/kan50_conv2_tile.mem",
+    "data": "programs/kan50_conv2_tile_data.mem",
+    "golden": "programs/kan50_conv2_tile_golden.mem"
+  }
+}

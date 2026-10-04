@@ -1,0 +1,62 @@
+{
+  "candidate_cpu": "cpu_core_pipeline_dot4acc_memopt_h13b_timingopt_t2",
+  "candidate_revision": {
+    "sha": "b90a3dca8a5fb3017a97d705abda9cbb498f88a3",
+    "short_sha": "b90a3dc",
+    "date": "2026-08-10T14:35:36+01:00",
+    "author": "Kiran Jayasena",
+    "message": "exp(fpga): evaluate H1.3b-T2 timing recovery",
+    "introduced_files": [
+      "rtl/cpu_core_pipeline_dot4acc_memopt_h13b_timingopt_t2.sv",
+      "rtl/fpga_top_pipeline_dot4acc_memopt_h13b_timingopt_t2.sv",
+      "scripts/run_vivado_impl_dot4acc_stage_h13b_timingopt_t2.tcl",
+      "tb/tb_cpu_core_pipeline_dot4acc_memopt_h13b_timingopt_t2.sv",
+      "tb/tb_dot4acc_stage_h13b_timingopt_t2_benchmark.sv"
+    ]
+  },
+  "repository_markers": {
+    "summer_project_final_tag": {
+      "tag": "summer-project-final",
+      "target_commit": "2731a7820988863829c7074acd474ea06902e8f2"
+    },
+    "fyp_baseline_tag": {
+      "tag_object": "047d90a8275472451e7acddf0a2bba41d10f18ee",
+      "target_commit": "2731a7820988863829c7074acd474ea06902e8f2",
+      "message": "Year 3 Project baseline derived from completed summer project"
+    }
+  },
+  "current_state": {
+    "branch": "fyp-development",
+    "head": "c6e8896c7cee27c5deb94dd29b49267f9a9efa7c",
+    "candidate_files_unchanged_since_candidate_revision": true,
+    "whole_tree_contains_later_year3_changes": true
+  },
+  "architecture": {
+    "pipeline": "five-stage in-order",
+    "width": "32-bit",
+    "instruction_memory": "256 words / 1024 bytes default",
+    "data_memory": "256 words / 1024 bytes default",
+    "base_isa": ["NOP", "ADD", "SUB", "AND", "OR", "XOR", "ADDI", "LOAD", "STORE", "BEQ", "JUMP"],
+    "extensions_present": ["MAC8", "DOT4ACC"],
+    "instrumentation": ["total_cycles", "retired_instructions"]
+  },
+  "toolchain": {
+    "os_workflow": "Windows PowerShell",
+    "vivado": "2026.1",
+    "simulator": "Vivado XSim",
+    "target_board": "Digilent Basys 3",
+    "fpga_part": "xc7a35tcpg236-1",
+    "python_for_ai_reference": "3.14.0",
+    "pytorch_for_ai_reference": "2.14.1",
+    "numpy_for_ai_reference": "2.5.3",
+    "desktop_c_reference_compiler": "GCC/MinGW; recorded result gcc.exe (MinGW.org GCC-6.3.0-1)",
+    "cpu_cross_compiler": null
+  },
+  "verification": {
+    "inherited_h13b_t2_checks": 4254,
+    "inherited_h13b_t2_failures": 0,
+    "inherited_timing_checkpoint": "93 MHz repeatably passed; 94 MHz nearest tested failure",
+    "year3_revalidation": ["KAN-45", "KAN-46", "KAN-47", "KAN-48", "KAN-50", "KAN-51"]
+  },
+  "provenance_ambiguity": "No single tag points directly at b90a3dc. The file-level candidate revision is unambiguous from git log --follow and the commit contents; fyp-baseline and summer-project-final are repository-level inherited snapshot markers that point to 2731a782, which contains the candidate unchanged."
+}
