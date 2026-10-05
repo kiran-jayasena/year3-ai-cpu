@@ -1,0 +1,48 @@
+{
+  "jira_task": "KAN-52",
+  "milestone": "M3",
+  "historical_baseline": {
+    "tag": "fyp-baseline",
+    "commit": "2731a7820988863829c7074acd474ea06902e8f2"
+  },
+  "experimental_baseline": {
+    "tag": "fyp-stage3-baseline",
+    "commit": "f6b25ca196493858cc2b501a0324c4a794c0dd94",
+    "annotated_tag_object": "74d9c8615d9ae1d0af8cf4ca5d61fc1a58c07647",
+    "remote": "summer-source"
+  },
+  "cpu": "cpu_core_pipeline_dot4acc_memopt_h13b_timingopt_t2",
+  "target_fpga": "xc7a35tcpg236-1",
+  "toolchain": {
+    "vivado": "2026.1",
+    "xsim": "2026.1"
+  },
+  "regression": {
+    "checks": 4254,
+    "failures": 0,
+    "pass": true
+  },
+  "smoke_tests": {
+    "tests": 5,
+    "repetitions_each": 5,
+    "all_pass": true,
+    "deterministic": true
+  },
+  "benchmark": {
+    "expected_output": [-116, 15, -97, 90],
+    "measured_output": [-116, 15, -97, 90],
+    "cycles": 1464,
+    "retired_instructions": 962,
+    "golden_match": true,
+    "deterministic": true
+  },
+  "instrumentation_validated": true,
+  "cpu_rtl_changed_from_inherited": false,
+  "isa_changed": false,
+  "new_acceleration_added": false,
+  "m3_pass": true,
+  "ready_for_s4": true,
+  "current_head": "77ea91221b578ad6c2e4cd4c74c9732f4942dd7d",
+  "current_head_is_newer_than_tag": true,
+  "s4_bottleneck_analysis_performed": false
+}
