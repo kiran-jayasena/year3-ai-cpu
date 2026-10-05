@@ -1,0 +1,26 @@
+Jira task: KAN-48
+
+Historical inherited baseline tag:
+fyp-baseline
+
+Historical inherited commit:
+2731a7820988863829c7074acd474ea06902e8f2
+
+Year III experimental baseline tag:
+fyp-stage3-baseline
+
+Year III experimental baseline commit:
+<final evidence commit SHA recorded after the dedicated KAN-48 evidence commit>
+
+CPU:
+cpu_core_pipeline_dot4acc_memopt_h13b_timingopt_t2
+
+Target FPGA:
+xc7a35tcpg236-1
+
+Toolchain:
+AMD Vivado 2026.1
+XSim 2026.1
+
+Purpose:
+Frozen unaccelerated baseline for S4 profiling and later A/B comparison.

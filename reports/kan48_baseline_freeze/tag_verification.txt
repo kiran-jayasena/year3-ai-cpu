@@ -1,0 +1,1 @@
+KAN-48 tag verification will be completed after the evidence commit and tag creation.
