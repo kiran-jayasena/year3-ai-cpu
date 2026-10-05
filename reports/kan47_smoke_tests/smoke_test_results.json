@@ -1,0 +1,178 @@
+{
+  "jira_task": "KAN-47",
+  "commit": "3ca5803d8de6a58eeb3cf9541a61501426e4ea43",
+  "tests": [
+    {
+      "name": "reset_startup",
+      "purpose": "reset entry PC and normal startup execution",
+      "expected": 1,
+      "actual": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "cycles": [
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "retired": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "runs": 5,
+      "stable": true,
+      "pass": true,
+      "cycle_min": 7,
+      "cycle_max": 7,
+      "retired_min": 2,
+      "retired_max": 2
+    },
+    {
+      "name": "scalar_arithmetic",
+      "purpose": "ADDI, ADD and SUB architectural result",
+      "expected": 7,
+      "actual": [
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "cycles": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "retired": [
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "runs": 5,
+      "stable": true,
+      "pass": true,
+      "cycle_min": 10,
+      "cycle_max": 10,
+      "retired_min": 5,
+      "retired_max": 5
+    },
+    {
+      "name": "taken_branch",
+      "purpose": "taken BEQ flushes wrong-path instruction",
+      "expected": 7,
+      "actual": [
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "cycles": [
+        13,
+        13,
+        13,
+        13,
+        13
+      ],
+      "retired": [
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "runs": 5,
+      "stable": true,
+      "pass": true,
+      "cycle_min": 13,
+      "cycle_max": 13,
+      "retired_min": 5,
+      "retired_max": 5
+    },
+    {
+      "name": "load_store",
+      "purpose": "store/load exact-value round trip",
+      "expected": 43,
+      "actual": [
+        43,
+        43,
+        43,
+        43,
+        43
+      ],
+      "cycles": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "retired": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "runs": 5,
+      "stable": true,
+      "pass": true,
+      "cycle_min": 10,
+      "cycle_max": 10,
+      "retired_min": 4,
+      "retired_max": 4
+    },
+    {
+      "name": "load_use_dependency",
+      "purpose": "load-use forwarding/stall dependency",
+      "expected": 10,
+      "actual": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "cycles": [
+        10,
+        10,
+        10,
+        10,
+        10
+      ],
+      "retired": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "runs": 5,
+      "stable": true,
+      "pass": true,
+      "cycle_min": 10,
+      "cycle_max": 10,
+      "retired_min": 4,
+      "retired_max": 4
+    }
+  ],
+  "all_tests_pass": true,
+  "cpu_rtl_modified": false,
+  "isa_modified": false,
+  "relationship": {
+    "kan46": "independent small architectural reconfirmation; KAN-46 remains the full 4,254-check regression",
+    "kan51": "uses the same reset/enable/sentinel convention but does not draw instrumentation conclusions"
+  }
+}
