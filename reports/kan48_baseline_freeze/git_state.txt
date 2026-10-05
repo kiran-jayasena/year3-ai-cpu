@@ -1,0 +1,24 @@
+KAN-48 Git state
+
+Pre-tag candidate HEAD:
+  f6b25ca196493858cc2b501a0324c4a794c0dd94
+  stage3: retain baseline validation transcripts
+
+Baseline tag:
+  fyp-stage3-baseline -> f6b25ca196493858cc2b501a0324c4a794c0dd94
+
+Historical reference:
+  fyp-baseline -> 2731a7820988863829c7074acd474ea06902e8f2
+
+Branch:
+  fyp-development
+
+Remote:
+  summer-source C:\FPGA\systemverilog-fpga-cpu (fetch/push)
+  No origin remote is configured.
+
+Pre-tag working-tree status:
+  clean after the dedicated KAN-48 evidence/transcript commits
+
+Final post-tag evidence update:
+  This file was updated after tag creation to record the immutable tag target and remote verification. The tag remains at f6b25ca and was not moved.

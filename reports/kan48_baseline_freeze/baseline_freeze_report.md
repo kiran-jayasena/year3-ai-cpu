@@ -8,7 +8,7 @@ Define the exact immutable Year III experimental baseline for S4 profiling, S5 a
 
 The inherited provenance baseline is `fyp-baseline` / `2731a7820988863829c7074acd474ea06902e8f2`, containing the unchanged H1.3b-T2 CPU architecture. The Year III candidate before this evidence commit was `8eef377277c808cc48e15fd8d2f86ef1f218277a`, which contains the committed KAN-44 through KAN-51 verification, benchmark and measurement infrastructure.
 
-The final tag will point to the dedicated KAN-48 evidence commit. Its full SHA is recorded in `baseline_identity.txt` and `tag_verification.txt` after the evidence commit is created.
+The final annotated tag points to dedicated KAN-48 evidence commit `f6b25ca196493858cc2b501a0324c4a794c0dd94`.
 
 ## Why this candidate was selected
 
@@ -28,7 +28,7 @@ The exact candidate revision passed the final pre-tag validation documented in `
 
 ## Tag and remote
 
-The intended annotated tag is `fyp-stage3-baseline` with message `Stage 3 validated experimental baseline before AI acceleration`. It will be created only after the evidence commit is complete and the working tree is clean, then pushed explicitly (not with `git push --tags`). Local and remote verification will be recorded in `tag_verification.txt`.
+The annotated tag is `fyp-stage3-baseline` with message `Stage 3 validated experimental baseline before AI acceleration`. It was created after the evidence commit and clean-tree validation, then pushed explicitly to the configured `summer-source` remote (not with `git push --tags`). Local and remote verification is recorded in `tag_verification.txt`.
 
 ## Conclusion
 

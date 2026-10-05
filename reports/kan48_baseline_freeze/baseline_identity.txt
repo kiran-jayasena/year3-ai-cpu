@@ -10,7 +10,7 @@ Year III experimental baseline tag:
 fyp-stage3-baseline
 
 Year III experimental baseline commit:
-<final evidence commit SHA recorded after the dedicated KAN-48 evidence commit>
+f6b25ca196493858cc2b501a0324c4a794c0dd94
 
 CPU:
 cpu_core_pipeline_dot4acc_memopt_h13b_timingopt_t2

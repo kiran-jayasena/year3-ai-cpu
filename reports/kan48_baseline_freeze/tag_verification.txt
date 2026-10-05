@@ -1,1 +1,24 @@
-KAN-48 tag verification will be completed after the evidence commit and tag creation.
+KAN-48 tag verification
+
+Tag name:
+  fyp-stage3-baseline
+Annotated tag object:
+  74d9c8615d9ae1d0af8cf4ca5d61fc1a58c07647
+Tag target commit:
+  f6b25ca196493858cc2b501a0324c4a794c0dd94
+Tag message:
+  Stage 3 validated experimental baseline before AI acceleration
+
+Local verification:
+  git rev-parse fyp-stage3-baseline^{}
+  f6b25ca196493858cc2b501a0324c4a794c0dd94
+  git tag --points-at HEAD
+  fyp-stage3-baseline (at the tag-target HEAD before this post-tag evidence update)
+
+Remote:
+  summer-source -> C:\FPGA\systemverilog-fpga-cpu
+  git ls-remote --tags summer-source refs/tags/fyp-stage3-baseline 'refs/tags/fyp-stage3-baseline^{}'
+  74d9c8615d9ae1d0af8cf4ca5d61fc1a58c07647 refs/tags/fyp-stage3-baseline
+  f6b25ca196493858cc2b501a0324c4a794c0dd94 refs/tags/fyp-stage3-baseline^{}
+
+The requested `origin` remote name does not exist in this repository; only the configured `summer-source` remote was used. No force push or `git push --tags` was used.
