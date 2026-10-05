@@ -1,0 +1,66 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/kan48-validation/rtl/cpu_defs_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/kan48-validation/tb/dot4acc_reference_pkg.sv" into library work
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/kan48-validation/rtl/bram_instr_mem.sv" into library work
+INFO: [VRFC 10-311] analyzing module bram_instr_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/kan48-validation/rtl/bram_data_mem.sv" into library work
+INFO: [VRFC 10-311] analyzing module bram_data_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/kan48-validation/rtl/dot4acc_pipeline.sv" into library work
+INFO: [VRFC 10-311] analyzing module dot4acc_pipeline
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/kan48-validation/rtl/cpu_core_pipeline_dot4acc_memopt_h13b_timingopt_t2.sv" into library work
+INFO: [VRFC 10-311] analyzing module cpu_core_pipeline_dot4acc_memopt_h13b_timingopt_t2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/FPGA/kan48-validation/tb/tb_cpu_core_pipeline_dot4acc_memopt_h13b_timingopt_t2.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_cpu_core_pipeline_dot4acc_memopt_h13b_timingopt_t2
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe tb_cpu_core_pipeline_dot4acc_memopt_h13b_timingopt_t2 -s kan48_baseline_regression_sim 
+Multi-threading is on. Using 20 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3645] port 'fetch_pc' remains unconnected for this instance [C:/FPGA/kan48-validation/tb/tb_cpu_core_pipeline_dot4acc_memopt_h13b_timingopt_t2.sv:94]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package work.cpu_defs_pkg
+Compiling package work.dot4acc_reference_pkg
+Compiling module work.dot4acc_pipeline
+Compiling module work.bram_instr_mem(NOP_INSTRUCTION=3...
+Compiling module work.bram_data_mem_default
+Compiling module work.cpu_core_pipeline_dot4acc_memopt...
+Compiling module work.tb_cpu_core_pipeline_dot4acc_mem...
+Built simulation snapshot kan48_baseline_regression_sim
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Mon Oct  5 18:56:58 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/kan48_baseline_regression_sim/xsim_script.tcl
+# xsim {kan48_baseline_regression_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+---- Signed architectural arithmetic vectors ----
+---- Stage D decode, writeback and retirement ----
+---- Scalar forwarding and LOAD dependencies ----
+---- Independent II=1 and contiguous accumulator chains ----
+---- DOT destination dependencies and chain breaks ----
+---- Younger non-DOT hold and global-enable freeze ----
+---- Single-port normal/DOT writeback arbitration ----
+---- DOT result visibility to resumed scalar consumers ----
+---- Completion freeze and exactly-once resume ----
+---- Redirect age correctness ----
+---- G1 chain/redirect boundary equivalence ----
+---- Reset flush and recovery ----
+---- Executable Stage D DOT4ACC program ----
+Stage D executable program: cycles=18 result=0x000000ac
+---- Deterministic 520-cycle issue-control stress ----
+Stage D totals: accepted=145 completed=140 retired=138 writes=137 reset_flushed=7 cancelled_before_issue=27
+Stage D checks: 4254, failures: 0
+TEST PASSED: Stage D DOT4ACC architectural verification
+$finish called at time : 13357 ns : File "C:/FPGA/kan48-validation/tb/tb_cpu_core_pipeline_dot4acc_memopt_h13b_timingopt_t2.sv" Line 1171
+exit
+INFO: [Common 17-206] Exiting xsim at Mon Oct  5 18:57:00 2026...

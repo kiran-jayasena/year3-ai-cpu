@@ -1,0 +1,22 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Mon Oct  5 18:56:19 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_kan50_processor_benchmark_sim/xsim_script.tcl
+# xsim {tb_kan50_processor_benchmark_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+KAN50 run=1 outputs=[-116,15,-97,90] cycles=1464 retired=962 PASS
+KAN50 run=2 outputs=[-116,15,-97,90] cycles=1464 retired=962 PASS
+KAN50 run=3 outputs=[-116,15,-97,90] cycles=1464 retired=962 PASS
+KAN50 run=4 outputs=[-116,15,-97,90] cycles=1464 retired=962 PASS
+KAN50 run=5 outputs=[-116,15,-97,90] cycles=1464 retired=962 PASS
+KAN-50 representative benchmark PASSED
+$finish called at time : 73396 ns : File "C:/FPGA/kan48-validation/tb/tb_kan50_processor_benchmark.sv" Line 125
+exit
+INFO: [Common 17-206] Exiting xsim at Mon Oct  5 18:56:21 2026...

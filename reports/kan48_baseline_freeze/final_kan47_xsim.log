@@ -1,0 +1,18 @@
+
+****** xsim v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Mon Oct  5 18:56:06 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_kan47_smoke_tests_sim/xsim_script.tcl
+# xsim {tb_kan47_smoke_tests_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+KAN-47 smoke checks=75 failures=0
+KAN-47 smoke tests PASSED
+$finish called at time : 3747 ns : File "C:/FPGA/kan48-validation/tb/tb_kan47_smoke_tests.sv" Line 209
+exit
+INFO: [Common 17-206] Exiting xsim at Mon Oct  5 18:56:08 2026...
