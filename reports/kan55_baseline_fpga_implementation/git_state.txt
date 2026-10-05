@@ -1,0 +1,9 @@
+KAN-55 isolated-workspace Git state
+====================================
+Workspace: C:\FPGA\kan55-baseline-impl
+Branch: detached HEAD
+HEAD: f6b25ca196493858cc2b501a0324c4a794c0dd94
+Describe: fyp-stage3-baseline
+Frozen tag target: f6b25ca196493858cc2b501a0324c4a794c0dd94
+Working-tree note: Vivado generated an isolated-workspace clockInfo.txt; no tracked source was changed and no generated project files were copied to the main repository.
+

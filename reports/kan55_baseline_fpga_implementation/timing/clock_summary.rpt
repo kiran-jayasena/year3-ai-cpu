@@ -1,0 +1,14 @@
+KAN-55 clock summary excerpt from post_route_timing_summary.rpt
+===============================================================
+Clock name: sys_clk_pin
+Waveform: {0.000 5.376}
+Period: 10.753 ns
+Frequency: 92.997 MHz
+WNS: +0.230 ns
+TNS: 0.000 ns
+WHS: +0.059 ns
+THS: 0.000 ns
+Pulse-width WNS: +4.876 ns
+Pulse-width TNS: 0.000 ns
+Source report: post_route_timing_summary.rpt, Clock Summary and Design Timing Summary sections.
+

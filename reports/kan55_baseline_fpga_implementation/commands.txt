@@ -1,0 +1,23 @@
+KAN-55 commands (execution order)
+==================================
+Main repository inspection:
+git status --short --branch
+git branch --show-current
+git rev-parse HEAD
+git rev-parse 'fyp-stage3-baseline^{}'
+git log -1 --oneline fyp-stage3-baseline
+git remote -v
+
+Isolated clone:
+git clone --no-local --branch fyp-stage3-baseline --single-branch C:\FPGA\year3-ai-cpu C:\FPGA\kan55-baseline-impl
+git -C C:\FPGA\kan55-baseline-impl status --short --branch
+git -C C:\FPGA\kan55-baseline-impl rev-parse HEAD
+
+Initial flow invocation (expected usage failure because the inherited script requires Tcl arguments):
+vivado.bat -mode batch -source scripts\run_vivado_impl_dot4acc_stage_h13b_timingopt_t2.tcl
+
+Successful unchanged baseline flow:
+Set-Location C:\FPGA\kan55-baseline-impl
+C:\AMDDesignTools\2026.1\Vivado\bin\vivado.bat -mode batch -source scripts\run_vivado_impl_dot4acc_stage_h13b_timingopt_t2.tcl -tclargs 10.752688172 93 1 reports/kan55_baseline_fpga_implementation fyp_stage3_baseline_93mhz_run1
+
+The script's output directories and report commands are unchanged from the frozen baseline. No RTL, XDC, or implementation setting was edited.

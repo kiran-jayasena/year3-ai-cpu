@@ -1,0 +1,16 @@
+KAN-55 design identity
+======================
+Baseline tag: fyp-stage3-baseline
+Baseline commit: f6b25ca196493858cc2b501a0324c4a794c0dd94
+Top module: fpga_top_pipeline_dot4acc_memopt_h13b_timingopt_t2
+CPU module: cpu_core_pipeline_dot4acc_memopt_h13b_timingopt_t2
+CPU RTL: rtl/cpu_core_pipeline_dot4acc_memopt_h13b_timingopt_t2.sv
+FPGA wrapper: rtl/fpga_top_pipeline_dot4acc_memopt_h13b_timingopt_t2.sv
+Supporting RTL: rtl/cpu_defs_pkg.sv; rtl/bram_instr_mem.sv; rtl/bram_data_mem.sv; rtl/dot4acc_pipeline.sv
+Constraints: constraints/basys3.xdc
+Part: xc7a35tcpg236-1
+Board: Digilent Basys 3
+Instruction image: programs/dot4acc_stage_d.mem
+Clock port/name: clk / sys_clk_pin
+Target period: 10.752688172 ns (93 MHz)
+
