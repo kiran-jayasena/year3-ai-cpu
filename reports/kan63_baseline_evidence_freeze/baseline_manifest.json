@@ -1,0 +1,62 @@
+{
+  "jira_task": "KAN-63",
+  "stage": "Stage 4 baseline evidence freeze",
+  "branch": "fyp-development",
+  "stage3_baseline_tag": "fyp-stage3-baseline",
+  "stage3_baseline_commit": "f6b25ca196493858cc2b501a0324c4a794c0dd94",
+  "kan63_freeze_tag": "fyp-stage4-evidence-freeze",
+  "kan63_freeze_commit": "git rev-parse fyp-stage4-evidence-freeze^{} (authoritative tag target)",
+  "cpu": "cpu_core_pipeline_dot4acc_memopt_h13b_timingopt_t2",
+  "top": "fpga_top_pipeline_dot4acc_memopt_h13b_timingopt_t2",
+  "fpga": "xc7a35tcpg236-1",
+  "board": "Digilent Basys 3",
+  "vivado": "2026.1 build 6511674",
+  "workload": {
+    "name": "Conv2-derived quantised representative tile",
+    "mnist_sample_index": 2,
+    "output_channel": 0,
+    "input_channel": 0,
+    "output_tile": "2x2",
+    "useful_mac_equivalent_operations": 36,
+    "golden_output": [-116, 15, -97, 90],
+    "execution_path": "scalar software",
+    "dot4acc_mac8_exercised": false
+  },
+  "metrics": {
+    "frequency_mhz": 93.0,
+    "cycles": 1464,
+    "retired_instructions": 962,
+    "cpi": 1.5218295,
+    "instructions_per_mac": 26.7222222,
+    "cycles_per_mac": 40.6666667,
+    "execution_time_us": 15.741935,
+    "luts": 2008,
+    "ffs": 1812,
+    "dsps": 5,
+    "bram_tiles": 1,
+    "total_power_w": 0.086,
+    "dynamic_power_w": 0.014,
+    "total_energy_uJ": 1.353806,
+    "total_energy_nJ_per_mac": 37.605735
+  },
+  "source_evidence": [
+    "reports/kan55_baseline_fpga_implementation/",
+    "reports/kan57_baseline_resource_utilisation/",
+    "reports/kan58_baseline_ai_performance/",
+    "reports/kan59_baseline_power_energy/",
+    "reports/kan62_baseline_bottleneck_profile/"
+  ],
+  "source_commits": {
+    "KAN-55": "4da3fd7a5f11a5aa5776651d2e70de981b78cae5",
+    "KAN-56_KAN-57": "6ecc35b8041ac1b07e5bcb1a2dd305434b5ae157",
+    "KAN-58": "db305881a9de3460b80cca8b5a07c32192e01c1e",
+    "KAN-59": "64d2092f64d60609252363514816d2c298477478",
+    "KAN-62": "c8e41ee1b1dd9697d702b8fb67191b0e5be38481"
+  },
+  "methodological_notes": [
+    "Power uses Vivado vectorless/default activity propagation with Medium confidence.",
+    "KAN-62 profiling is observational simulation-only and leaves 280 excess cycles unclassified.",
+    "The Stage 3 tag remains immutable; this package is documentation/evidence only."
+  ],
+  "architecture_or_workload_changed": false
+}

@@ -1,0 +1,24 @@
+category,metric,value,units,source
+identity,stage3_tag,fyp-stage3-baseline,,KAN-48
+identity,frozen_commit,f6b25ca196493858cc2b501a0324c4a794c0dd94,,KAN-48
+platform,fpga,xc7a35tcpg236-1,,KAN-55
+timing,frequency,93.000,MHz,KAN-56
+workload,useful_mac_equivalent_operations,36,count,KAN-58
+workload,golden_output,"[-116, 15, -97, 90]",int4,KAN-58
+resources,luts,2008,count,KAN-57
+resources,ffs,1812,count,KAN-57
+resources,dsps,5,count,KAN-57
+resources,bram_tiles,1,count,KAN-57
+performance,cycles,1464,cycles,KAN-58
+performance,retired_instructions,962,instructions,KAN-58
+performance,cpi,1.5218295,cycles/instruction,KAN-58
+performance,instructions_per_mac,26.7222222,instructions/MAC,KAN-58
+performance,cycles_per_mac,40.6666667,cycles/MAC,KAN-58
+performance,execution_time,15.741935,us,KAN-58
+power,total_on_chip,0.086,W,KAN-59
+power,static_device,0.072,W,KAN-59
+power,dynamic,0.014,W,KAN-59
+energy,total_workload,1.353806,uJ,KAN-59
+energy,dynamic_workload,0.220387,uJ,KAN-59
+energy,total_per_mac,37.605735,nJ/MAC,KAN-59
+bottleneck,primary,scalar instruction and control-flow overhead,,KAN-62

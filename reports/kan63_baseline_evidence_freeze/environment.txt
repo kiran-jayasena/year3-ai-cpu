@@ -1,0 +1,15 @@
+KAN-63 Stage 4 baseline evidence freeze
+Repository: C:\FPGA\year3-ai-cpu
+Branch: fyp-development
+Stage 3 baseline tag: fyp-stage3-baseline
+Stage 3 baseline commit: f6b25ca196493858cc2b501a0324c4a794c0dd94
+Stage 4 freeze tag: fyp-stage4-evidence-freeze (created after the KAN-63 commit)
+CPU: cpu_core_pipeline_dot4acc_memopt_h13b_timingopt_t2
+Top: fpga_top_pipeline_dot4acc_memopt_h13b_timingopt_t2
+FPGA/board: xc7a35tcpg236-1 / Digilent Basys 3
+Vivado/XSim: 2026.1 build 6511674
+Validated frequency: 93.000 MHz
+Workload: programs/kan50_conv2_tile.mem, MNIST sample index 2, Conv2-derived 2x2 tile
+Profiling mode: retained KAN-62 simulation-only observational trace
+Power activity: none (Vivado vectorless/default activity propagation)
+No RTL, ISA, memory, workload, timing-constraint or clocking changes were made.
