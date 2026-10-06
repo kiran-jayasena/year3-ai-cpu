@@ -1,0 +1,19 @@
+{
+  "useful_mac_equivalent_operations": 36,
+  "retired_instructions": 962,
+  "cycles": 1464,
+  "cpi": 1.5218295218,
+  "instructions_per_mac": 26.7222222222,
+  "cycles_per_mac": 40.6666666667,
+  "macs_per_cycle": 0.02459016393,
+  "arithmetic_instructions_per_mac": 6.0,
+  "memory_instructions_per_mac": 3.1666666667,
+  "control_instructions_per_mac": 10.1944444444,
+  "address_and_loop_instructions_per_mac": 7.3611111111,
+  "stall_cycles_per_mac_directly_measured": 6.0,
+  "control_flush_cycles_per_mac": 6.0,
+  "residual_excess_cycles_per_mac": 7.7777777778,
+  "excess_cycles": 502,
+  "directly_measured_non_retirement_cycles": 222,
+  "unclassified_residual_cycles": 280
+}

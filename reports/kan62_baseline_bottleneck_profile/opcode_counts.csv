@@ -1,0 +1,11 @@
+opcode,hex,count,percent_retired,main_role
+ADDI,6,265,27.547,"setup, address generation, loop counters"
+ADD,1,204,21.205,"scalar arithmetic and accumulation"
+SUB,2,12,1.247,"signed accumulation"
+LOAD,7,109,11.331,"activation/weight/bias reads"
+STORE,8,5,0.520,"four outputs plus sentinel"
+BEQ,9,216,22.453,"inner/outer loop tests"
+JUMP,a,151,15.696,"loop/control transfers"
+NOP,0,0,0.000,"not retired in measured run"
+AND/OR/XOR,3-5,0,0.000,"not retired in measured run"
+MAC8/DOT4ACC,b/c,0,0.000,"not issued by KAN-58 program"

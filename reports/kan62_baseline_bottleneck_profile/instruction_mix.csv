@@ -1,0 +1,10 @@
+category,count,percent_retired,instructions_per_mac,notes
+arithmetic_accumulation,216,22.453,6.000,"ADD/SUB; includes scalar accumulation"
+loads,109,11.331,3.028,"LOAD opcodes"
+stores,5,0.520,0.139,"STORE opcodes"
+address_generation,112,11.642,3.111,"ADDI pointer/index updates at PCs 0x2c,0x30,0x34,0x70"
+loop_counter_updates,144,14.969,4.000,"ADDI loop updates at PCs 0x48,0x60,0x74"
+immediate_setup_constants,9,0.936,0.250,"Initial/persistent constant setup ADDI instances"
+conditional_branches,216,22.453,6.000,"BEQ; 65 taken and 151 not taken"
+unconditional_jumps,151,15.696,4.194,"JUMP loop/control transfers"
+other,0,0.000,0.000,"No other retired opcode"

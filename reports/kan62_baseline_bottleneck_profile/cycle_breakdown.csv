@@ -1,0 +1,6 @@
+cycle_component,cycles,percent_total,evidence_type,notes
+ideal_one_cycle_per_retired_instruction,962,65.710,"analytical baseline","one ideal cycle assigned per retired instruction"
+pipeline_fill,6,0.410,"directly measured counter","pipeline_fill_cycles"
+control_hazard_flush,216,14.754,"directly measured counter","one counted redirect flush per taken BEQ or JUMP"
+residual_excess,280,19.126,"calculated residual","502 excess minus measured fill and control flush; not directly attributed"
+total,1464,100.000,"measured","total_cycles"

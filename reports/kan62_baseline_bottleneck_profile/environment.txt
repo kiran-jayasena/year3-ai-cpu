@@ -1,0 +1,13 @@
+KAN-62 environment
+===================
+Baseline tag: fyp-stage3-baseline
+Baseline commit: f6b25ca196493858cc2b501a0324c4a794c0dd94
+CPU/top: cpu_core_pipeline_dot4acc_memopt_h13b_timingopt_t2 / fpga_top_pipeline_dot4acc_memopt_h13b_timingopt_t2
+FPGA/board: xc7a35tcpg236-1 / Digilent Basys 3
+Vivado/XSim: v2026.1 build 6511674
+Validated frequency: 93.000 MHz
+Workload: programs/kan50_conv2_tile.mem
+Golden output: [-116, 15, -97, 90]
+Useful MAC-equivalent operations: 36
+Profiling mode: simulation-only observational trace; no RTL changes
+

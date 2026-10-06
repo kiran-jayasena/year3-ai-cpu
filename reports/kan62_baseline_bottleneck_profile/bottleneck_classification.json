@@ -1,0 +1,10 @@
+{
+  "scalar_instruction_overhead": {"classification": "Dominant", "confidence": "High", "evidence": "962 retired instructions for 36 MAC-equivalent operations; 26.722 instructions/MAC"},
+  "arithmetic_throughput": {"classification": "Significant", "confidence": "Medium", "evidence": "216 ADD/SUB instructions and software repeated-addition products; no multiply or DOT4ACC opcode"},
+  "memory_data_movement": {"classification": "Significant", "confidence": "Medium", "evidence": "114 LOAD/STORE instructions (3.167/MAC), but memory_wait counter is zero"},
+  "address_generation": {"classification": "Significant", "confidence": "High", "evidence": "112 address updates plus 144 loop-counter ADDIs; 265 ADDI total"},
+  "branch_control": {"classification": "Dominant", "confidence": "High", "evidence": "367 BEQ/JUMP instructions, 216 measured flush cycles, 281 wrong-path instructions flushed"},
+  "pipeline_hazards": {"classification": "Not supported by evidence", "confidence": "High", "evidence": "data_hazard_stall_cycles=0 and load_use_stall_cycles=0"},
+  "fmax_timing": {"classification": "Not supported by evidence", "confidence": "Medium", "evidence": "KAN-56 established a stable 93 MHz physical point; no workload timing limit was measured"},
+  "primary_reason": "Scalar instruction/control overhead, especially loop branches/jumps and their flushes, combined with address/loop bookkeeping and software arithmetic for each product"
+}
