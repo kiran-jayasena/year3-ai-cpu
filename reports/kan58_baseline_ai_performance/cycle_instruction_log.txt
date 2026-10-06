@@ -1,0 +1,12 @@
+KAN-58 cycle/instruction measurements
+======================================
+Run 1: cycles=1464 retired_instructions=962 output=PASS
+Run 2: cycles=1464 retired_instructions=962 output=PASS
+Run 3: cycles=1464 retired_instructions=962 output=PASS
+Run 4: cycles=1464 retired_instructions=962 output=PASS
+Run 5: cycles=1464 retired_instructions=962 output=PASS
+
+Cycle count range: 1464..1464
+Retired instruction range: 962..962
+Both counters are deterministic across all five runs.
+

@@ -1,0 +1,41 @@
+{
+  "jira_task": "KAN-58",
+  "baseline_tag": "fyp-stage3-baseline",
+  "baseline_commit": "f6b25ca196493858cc2b501a0324c4a794c0dd94",
+  "current_documentation_commit": "6ecc35b8041ac1b07e5bcb1a2dd305434b5ae157",
+  "workload": {
+    "name": "Conv2-derived quantised representative tile",
+    "source_layer": "Conv2",
+    "source_sample_index": 2,
+    "output_tile": "output channel 0, input channel 0, y=0..1, x=0..1",
+    "outputs": 4,
+    "products_per_output": 9,
+    "useful_mac_equivalent_operations": 36,
+    "program_words": 33,
+    "data_words_used": 114
+  },
+  "golden_reference": [-116, 15, -97, 90],
+  "validated_clock_frequency_hz": 93000000,
+  "runs": [
+    {"run": 1, "cycles": 1464, "retired_instructions": 962, "output": [-116, 15, -97, 90], "correct": true},
+    {"run": 2, "cycles": 1464, "retired_instructions": 962, "output": [-116, 15, -97, 90], "correct": true},
+    {"run": 3, "cycles": 1464, "retired_instructions": 962, "output": [-116, 15, -97, 90], "correct": true},
+    {"run": 4, "cycles": 1464, "retired_instructions": 962, "output": [-116, 15, -97, 90], "correct": true},
+    {"run": 5, "cycles": 1464, "retired_instructions": 962, "output": [-116, 15, -97, 90], "correct": true}
+  ],
+  "derived_metrics": {
+    "cpi": 1.5218295218,
+    "instructions_per_mac": 26.7222222222,
+    "cycles_per_mac": 40.6666666667,
+    "macs_per_cycle": 0.02459016393,
+    "execution_time_seconds": 0.000015741935484,
+    "execution_time_microseconds": 15.741935484
+  },
+  "deterministic_counts": true,
+  "correct_output": true,
+  "uses_existing_dot4acc_pipeline_path": false,
+  "dot4acc_pipeline_present_in_baseline": true,
+  "rtl_changed": false,
+  "isa_changed": false,
+  "memory_or_constraints_changed": false
+}

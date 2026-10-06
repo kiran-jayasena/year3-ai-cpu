@@ -1,0 +1,9 @@
+KAN-58 benchmark output
+=======================
+Expected golden output: [-116, 15, -97, 90]
+Run 1: [-116, 15, -97, 90] PASS
+Run 2: [-116, 15, -97, 90] PASS
+Run 3: [-116, 15, -97, 90] PASS
+Run 4: [-116, 15, -97, 90] PASS
+Run 5: [-116, 15, -97, 90] PASS
+

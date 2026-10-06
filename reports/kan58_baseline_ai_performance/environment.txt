@@ -1,0 +1,14 @@
+KAN-58 environment and provenance
+==================================
+Baseline tag: fyp-stage3-baseline
+Baseline commit: f6b25ca196493858cc2b501a0324c4a794c0dd94
+Current documentation commit: 6ecc35b8041ac1b07e5bcb1a2dd305434b5ae157
+CPU/top: cpu_core_pipeline_dot4acc_memopt_h13b_timingopt_t2 / fpga_top_pipeline_dot4acc_memopt_h13b_timingopt_t2
+FPGA/board: xc7a35tcpg236-1 / Digilent Basys 3
+Vivado/XSim: 2026.1 build 6511674
+Validated clock frequency: 93.000 MHz (KAN-56, 10.752688172 ns)
+Benchmark source: programs/kan50_conv2_tile.mem
+Golden source: reports/kan50_processor_benchmark/golden_reference.json
+Instrumentation source: reports/kan51_instrumentation/instrumentation_validation.json
+Benchmark evidence reused: reports/kan50_processor_benchmark/processor_results.json and repeated_runs.csv
+
