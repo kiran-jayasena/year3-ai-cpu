@@ -1,0 +1,41 @@
+{
+  "jira_task": "KAN-59",
+  "baseline_tag": "fyp-stage3-baseline",
+  "baseline_commit": "f6b25ca196493858cc2b501a0324c4a794c0dd94",
+  "top": "fpga_top_pipeline_dot4acc_memopt_h13b_timingopt_t2",
+  "fpga_part": "xc7a35tcpg236-1",
+  "vivado": "2026.1 build 6511674",
+  "validated_frequency_hz": 93000000,
+  "workload_cycles": 1464,
+  "execution_time_seconds": 0.000015741935484,
+  "useful_mac_equivalent_operations": 36,
+  "power_methodology": "vectorless/default activity propagation",
+  "simulation_activity_file": null,
+  "vivado_confidence": "Medium",
+  "power_watts": {
+    "total_on_chip": 0.086,
+    "device_static": 0.072,
+    "dynamic": 0.014,
+    "clocks": 0.006,
+    "slice_logic": "<0.001",
+    "signals": "<0.001",
+    "block_ram": 0.003,
+    "dsps": 0.000,
+    "io": 0.004
+  },
+  "energy": {
+    "total_joules": 0.0000013538064516129032,
+    "dynamic_joules": 0.00000022038709677419355,
+    "total_microjoules": 1.3538064516129032,
+    "dynamic_microjoules": 0.22038709677419355,
+    "total_nj_per_mac": 37.60573476702509,
+    "dynamic_nj_per_mac": 6.121863799283155
+  },
+  "dot4acc_hardware_present": true,
+  "dot4acc_path_exercised_by_kan58": false,
+  "rtl_changed": false,
+  "isa_changed": false,
+  "memory_changed": false,
+  "constraints_changed": false,
+  "workload_changed": false
+}

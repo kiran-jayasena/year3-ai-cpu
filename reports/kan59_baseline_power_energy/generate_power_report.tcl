@@ -1,0 +1,4 @@
+open_checkpoint reports/kan55_baseline_fpga_implementation/checkpoints/baseline_routed.dcp
+report_power -file reports/kan59_baseline_power_energy/baseline_power_post_impl.rpt
+close_design
+exit
