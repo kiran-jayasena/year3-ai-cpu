@@ -1,0 +1,25 @@
+KAN-56 commands
+===============
+Main-state inspection:
+git status --short --branch
+git branch --show-current
+git rev-parse HEAD
+git rev-parse 'fyp-stage3-baseline^{}'
+git log -1 --oneline fyp-stage3-baseline
+
+Isolated workspace:
+git clone --no-local --branch fyp-stage3-baseline --single-branch C:\FPGA\year3-ai-cpu C:\FPGA\kan56-timing-sweep
+
+Each run used the unchanged script with this form:
+C:\AMDDesignTools\2026.1\Vivado\bin\vivado.bat -mode batch -source scripts\run_vivado_impl_dot4acc_stage_h13b_timingopt_t2.tcl -tclargs <period_ns> <frequency_mhz> 1 <output_dir> <identifier>
+
+Executed points:
+10.50 95.238095 reports/kan56/p1050 fyp_stage3_p1050
+10.25 97.560976 reports/kan56/p1025 fyp_stage3_p1025
+10.00 100.000000 reports/kan56/p1000 fyp_stage3_p1000
+9.75 102.564103 reports/kan56/p0975 fyp_stage3_p0975
+10.70 93.457944 reports/kan56/p1070 fyp_stage3_p1070
+10.752688172 93 reports/kan56/p1075268_r1 fyp_stage3_p1075268_r1
+10.752688172 93 reports/kan56/p1075268_r2 fyp_stage3_p1075268_r2
+10.752688172 93 reports/kan56/p1075268_r3 fyp_stage3_p1075268_r3
+

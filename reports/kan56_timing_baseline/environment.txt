@@ -1,0 +1,14 @@
+KAN-56 environment
+===================
+Workspace: C:\FPGA\kan56-timing-sweep
+Baseline tag: fyp-stage3-baseline
+Baseline commit: f6b25ca196493858cc2b501a0324c4a794c0dd94
+Windows: Microsoft Windows 11 Pro 10.0.26200 build 26200
+PowerShell: 5.1.26100.9444
+Git: 2.55.0.windows.1
+Vivado/XSim: v2026.1 (64-bit), SW Build 6511674
+Vivado executable: C:\AMDDesignTools\2026.1\Vivado\bin\vivado.bat
+FPGA part: xc7a35tcpg236-1
+Target board: Digilent Basys 3
+Top: fpga_top_pipeline_dot4acc_memopt_h13b_timingopt_t2
+

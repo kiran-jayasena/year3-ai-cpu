@@ -1,0 +1,10 @@
+run_id,period_ns,frequency_mhz,wns_ns,tns_ns,worst_hold_slack_ns,route_pass,setup_pass,hold_pass,overall_result
+p1050,10.50,95.238095,-0.288,-12.322,0.060,true,false,true,FAIL_SETUP
+p1025,10.25,97.560976,-0.967,-171.010,0.060,true,false,true,FAIL_SETUP
+p1000,10.00,100.000000,-0.623,-71.487,0.057,true,false,true,FAIL_SETUP
+p0975,9.75,102.564103,-1.165,-327.124,0.056,true,false,true,FAIL_SETUP
+p1070,10.70,93.457944,-0.157,-1.713,0.038,true,false,true,FAIL_SETUP
+p1075268_r1,10.752688172,93.000000,0.230,0.000,0.059,true,true,true,PASS
+p1075268_r2,10.752688172,93.000000,0.230,0.000,0.059,true,true,true,PASS
+p1075268_r3,10.752688172,93.000000,0.230,0.000,0.059,true,true,true,PASS
+

@@ -1,0 +1,24 @@
+{
+  "jira_task": "KAN-57",
+  "baseline_tag": "fyp-stage3-baseline",
+  "baseline_commit": "f6b25ca196493858cc2b501a0324c4a794c0dd94",
+  "top": "fpga_top_pipeline_dot4acc_memopt_h13b_timingopt_t2",
+  "fpga_part": "xc7a35tcpg236-1",
+  "board": "Digilent Basys 3",
+  "vivado": "2026.1 build 6511674",
+  "report_type": "post-implementation/post-route",
+  "report_date": "2026-10-05",
+  "resources": {
+    "slice_luts": {"used": 2008, "available": 20800, "utilisation_percent": 9.65},
+    "slice_registers": {"used": 1812, "available": 41600, "utilisation_percent": 4.36},
+    "dsp48e1": {"used": 5, "available": 90, "utilisation_percent": 5.56},
+    "block_ram_tiles": {"used": 1, "available": 50, "utilisation_percent": 2.0},
+    "ramb18": {"used": 2, "available": 100, "utilisation_percent": 2.0},
+    "lutram": {"used": 0, "available": 9600, "utilisation_percent": 0.0},
+    "bonded_iobs": {"used": 19, "available": 106, "utilisation_percent": 17.92},
+    "bufgctrl": {"used": 1, "available": 32, "utilisation_percent": 3.13}
+  },
+  "rtl_changed": false,
+  "implementation_reused": true,
+  "hierarchical_report_generated_from_routed_checkpoint": true
+}

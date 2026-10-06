@@ -1,0 +1,36 @@
+Startpoint: cpu_inst/data_mem_inst/mem_reg/CLKARDCLK
+Endpoint: cpu_inst/id_ex_reg_reg[operand_a][13]/R
+Path group: sys_clk_pin
+Clock: sys_clk_pin
+Setup slack (ns): -0.157
+Data path delay (ns): 10.222
+Logic delay (ns): 4.491
+Routing delay (ns): 5.731
+Clock uncertainty (ns): 0.035
+Logic levels: 11
+
+Path pins, cells, placement and nets
+cpu_inst/data_mem_inst/mem_reg/DOADO[1] | cell=cpu_inst/data_mem_inst/mem_reg | ref=RAMB18E1 | loc=RAMB18_X0Y4 | bel=RAMB18E1.RAMB18E1 | net=cpu_inst/data_mem_inst/read_data[1]
+cpu_inst/data_mem_inst/product0_reg_reg_i_39/I2 | cell=cpu_inst/data_mem_inst/product0_reg_reg_i_39 | ref=LUT5 | loc=SLICE_X9Y7 | bel=SLICEL.B6LUT | net=cpu_inst/data_mem_inst/read_data[1]
+cpu_inst/data_mem_inst/product0_reg_reg_i_39/O | cell=cpu_inst/data_mem_inst/product0_reg_reg_i_39 | ref=LUT5 | loc=SLICE_X9Y7 | bel=SLICEL.B6LUT | net=cpu_inst/data_mem_inst/product0_reg_reg_i_39_n_0
+cpu_inst/data_mem_inst/product0_reg_reg_i_26/I2 | cell=cpu_inst/data_mem_inst/product0_reg_reg_i_26 | ref=LUT5 | loc=SLICE_X9Y7 | bel=SLICEL.C6LUT | net=cpu_inst/data_mem_inst/product0_reg_reg_i_39_n_0
+cpu_inst/data_mem_inst/product0_reg_reg_i_26/O | cell=cpu_inst/data_mem_inst/product0_reg_reg_i_26 | ref=LUT5 | loc=SLICE_X9Y7 | bel=SLICEL.C6LUT | net=cpu_inst/data_mem_inst/ex_mem_reg_reg[alu_result][1]
+cpu_inst/dot4acc_pipeline_inst/redirect_pending_target[31]_i_24/I2 | cell=cpu_inst/dot4acc_pipeline_inst/redirect_pending_target[31]_i_24 | ref=LUT6 | loc=SLICE_X8Y11 | bel=SLICEM.A6LUT | net=cpu_inst/dot4acc_pipeline_inst/redirect_pending_target_reg[31]_i_16_2
+cpu_inst/dot4acc_pipeline_inst/redirect_pending_target[31]_i_24/O | cell=cpu_inst/dot4acc_pipeline_inst/redirect_pending_target[31]_i_24 | ref=LUT6 | loc=SLICE_X8Y11 | bel=SLICEM.A6LUT | net=cpu_inst/dot4acc_pipeline_inst/redirect_pending_target[31]_i_24_n_0
+cpu_inst/dot4acc_pipeline_inst/redirect_pending_target_reg[31]_i_16/S[0] | cell=cpu_inst/dot4acc_pipeline_inst/redirect_pending_target_reg[31]_i_16 | ref=CARRY4 | loc=SLICE_X8Y11 | bel=SLICEM.CARRY4 | net=cpu_inst/dot4acc_pipeline_inst/redirect_pending_target[31]_i_24_n_0
+cpu_inst/dot4acc_pipeline_inst/redirect_pending_target_reg[31]_i_16/CO[3] | cell=cpu_inst/dot4acc_pipeline_inst/redirect_pending_target_reg[31]_i_16 | ref=CARRY4 | loc=SLICE_X8Y11 | bel=SLICEM.CARRY4 | net=cpu_inst/dot4acc_pipeline_inst/redirect_pending_target_reg[31]_i_16_n_0
+cpu_inst/dot4acc_pipeline_inst/redirect_pending_target_reg[31]_i_12/CI | cell=cpu_inst/dot4acc_pipeline_inst/redirect_pending_target_reg[31]_i_12 | ref=CARRY4 | loc=SLICE_X8Y12 | bel=SLICEM.CARRY4 | net=cpu_inst/dot4acc_pipeline_inst/redirect_pending_target_reg[31]_i_16_n_0
+cpu_inst/dot4acc_pipeline_inst/redirect_pending_target_reg[31]_i_12/CO[3] | cell=cpu_inst/dot4acc_pipeline_inst/redirect_pending_target_reg[31]_i_12 | ref=CARRY4 | loc=SLICE_X8Y12 | bel=SLICEM.CARRY4 | net=cpu_inst/dot4acc_pipeline_inst/redirect_pending_target_reg[31]_i_12_n_0
+cpu_inst/dot4acc_pipeline_inst/redirect_pending_target_reg[31]_i_5/CI | cell=cpu_inst/dot4acc_pipeline_inst/redirect_pending_target_reg[31]_i_5 | ref=CARRY4 | loc=SLICE_X8Y13 | bel=SLICEM.CARRY4 | net=cpu_inst/dot4acc_pipeline_inst/redirect_pending_target_reg[31]_i_12_n_0
+cpu_inst/dot4acc_pipeline_inst/redirect_pending_target_reg[31]_i_5/CO[2] | cell=cpu_inst/dot4acc_pipeline_inst/redirect_pending_target_reg[31]_i_5 | ref=CARRY4 | loc=SLICE_X8Y13 | bel=SLICEM.CARRY4 | net=cpu_inst/dot4acc_pipeline_inst/ex_branch_taken0
+cpu_inst/dot4acc_pipeline_inst/led_OBUF[12]_inst_i_6/I3 | cell=cpu_inst/dot4acc_pipeline_inst/led_OBUF[12]_inst_i_6 | ref=LUT4 | loc=SLICE_X8Y10 | bel=SLICEM.B6LUT | net=cpu_inst/dot4acc_pipeline_inst/ex_branch_taken0
+cpu_inst/dot4acc_pipeline_inst/led_OBUF[12]_inst_i_6/O | cell=cpu_inst/dot4acc_pipeline_inst/led_OBUF[12]_inst_i_6 | ref=LUT4 | loc=SLICE_X8Y10 | bel=SLICEM.B6LUT | net=cpu_inst/dot4acc_pipeline_inst/led_OBUF[12]_inst_i_6_n_0
+cpu_inst/dot4acc_pipeline_inst/id_ex_reg[pc][31]_i_11/I0 | cell=cpu_inst/dot4acc_pipeline_inst/id_ex_reg[pc][31]_i_11 | ref=LUT4 | loc=SLICE_X9Y8 | bel=SLICEL.C6LUT | net=cpu_inst/dot4acc_pipeline_inst/led_OBUF[12]_inst_i_6_n_0
+cpu_inst/dot4acc_pipeline_inst/id_ex_reg[pc][31]_i_11/O | cell=cpu_inst/dot4acc_pipeline_inst/id_ex_reg[pc][31]_i_11 | ref=LUT4 | loc=SLICE_X9Y8 | bel=SLICEL.C6LUT | net=cpu_inst/dot4acc_pipeline_inst/id_ex_reg[pc][31]_i_11_n_0
+cpu_inst/dot4acc_pipeline_inst/id_ex_reg[pc][31]_i_3/I5 | cell=cpu_inst/dot4acc_pipeline_inst/id_ex_reg[pc][31]_i_3 | ref=LUT6 | loc=SLICE_X9Y8 | bel=SLICEL.A6LUT | net=cpu_inst/dot4acc_pipeline_inst/id_ex_reg[pc][31]_i_11_n_0
+cpu_inst/dot4acc_pipeline_inst/id_ex_reg[pc][31]_i_3/O | cell=cpu_inst/dot4acc_pipeline_inst/id_ex_reg[pc][31]_i_3 | ref=LUT6 | loc=SLICE_X9Y8 | bel=SLICEL.A6LUT | net=cpu_inst/dot4acc_pipeline_inst/id_ex_reg[pc][31]_i_3_n_0
+cpu_inst/dot4acc_pipeline_inst/id_ex_reg[operand_b][31]_i_4/I2 | cell=cpu_inst/dot4acc_pipeline_inst/id_ex_reg[operand_b][31]_i_4 | ref=LUT5 | loc=SLICE_X8Y6 | bel=SLICEM.A6LUT | net=cpu_inst/dot4acc_pipeline_inst/id_ex_reg[pc][31]_i_3_n_0
+cpu_inst/dot4acc_pipeline_inst/id_ex_reg[operand_b][31]_i_4/O | cell=cpu_inst/dot4acc_pipeline_inst/id_ex_reg[operand_b][31]_i_4 | ref=LUT5 | loc=SLICE_X8Y6 | bel=SLICEM.A6LUT | net=cpu_inst/dot4acc_pipeline_inst/id_ex_reg[operand_b][31]_i_4_n_0
+cpu_inst/dot4acc_pipeline_inst/id_ex_reg[operand_a][31]_i_1/I1 | cell=cpu_inst/dot4acc_pipeline_inst/id_ex_reg[operand_a][31]_i_1 | ref=LUT3 | loc=SLICE_X8Y6 | bel=SLICEM.C6LUT | net=cpu_inst/dot4acc_pipeline_inst/id_ex_reg[operand_b][31]_i_4_n_0
+cpu_inst/dot4acc_pipeline_inst/id_ex_reg[operand_a][31]_i_1/O | cell=cpu_inst/dot4acc_pipeline_inst/id_ex_reg[operand_a][31]_i_1 | ref=LUT3 | loc=SLICE_X8Y6 | bel=SLICEM.C6LUT | net=cpu_inst/dot4acc_pipeline_inst/if_id_reg_reg[instruction][21]
+cpu_inst/id_ex_reg_reg[operand_a][13]/R | cell=cpu_inst/id_ex_reg_reg[operand_a][13] | ref=FDRE | loc=SLICE_X10Y5 | bel=SLICEM.DFF | net=cpu_inst/dot4acc_pipeline_inst_n_4

@@ -1,0 +1,39 @@
+{
+  "jira_task": "KAN-56",
+  "baseline_tag": "fyp-stage3-baseline",
+  "baseline_commit": "f6b25ca196493858cc2b501a0324c4a794c0dd94",
+  "workspace": "C:\\FPGA\\kan56-timing-sweep",
+  "vivado": "2026.1",
+  "fpga_part": "xc7a35tcpg236-1",
+  "known_kan55_point": {
+    "period_ns": 10.753,
+    "frequency_mhz": 92.997,
+    "wns_ns": 0.230,
+    "tns_ns": 0.0,
+    "worst_hold_slack_ns": 0.059
+  },
+  "highest_repeatable_clean_point": {
+    "period_ns": 10.752688172,
+    "frequency_mhz": 93.0,
+    "wns_range_ns": [0.230, 0.230],
+    "tns_ns": 0.0,
+    "hold_range_ns": [0.059, 0.059],
+    "repetitions": 3
+  },
+  "first_tested_failing_point": {
+    "period_ns": 10.70,
+    "frequency_mhz": 93.457944,
+    "wns_ns": -0.157,
+    "tns_ns": -1.713,
+    "worst_hold_slack_ns": 0.038,
+    "failure": "setup"
+  },
+  "tested_points": 8,
+  "rtl_changed": false,
+  "isa_changed": false,
+  "implementation_strategy_changed": false,
+  "constraints_changed_except_clock": false,
+  "resources_consistent": true,
+  "timing_baseline_established": true,
+  "bottleneck_analysis_performed": false
+}

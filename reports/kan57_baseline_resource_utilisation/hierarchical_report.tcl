@@ -1,0 +1,4 @@
+open_checkpoint reports/kan55_baseline_fpga_implementation/checkpoints/baseline_routed.dcp
+report_utilization -hierarchical -file reports/kan57_baseline_resource_utilisation/baseline_utilisation_hierarchical.rpt
+close_design
+exit

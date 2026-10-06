@@ -1,0 +1,35 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Tue Oct  6 17:49:17 2026
+| Host         : DESKTOP-4GB7DVJ running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -file reports/kan57_baseline_resource_utilisation/baseline_utilisation_hierarchical.rpt
+| Design       : fpga_top_pipeline_dot4acc_memopt_h13b_timingopt_t2
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------------------------------------------------+----------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|                        Instance                        |                       Module                       | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++--------------------------------------------------------+----------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| fpga_top_pipeline_dot4acc_memopt_h13b_timingopt_t2     |                                              (top) |       2008 |       2008 |       0 |    0 | 1812 |      0 |      2 |          5 |
+|   (fpga_top_pipeline_dot4acc_memopt_h13b_timingopt_t2) |                                              (top) |          0 |          0 |       0 |    0 |    0 |      0 |      0 |          0 |
+|   cpu_inst                                             | cpu_core_pipeline_dot4acc_memopt_h13b_timingopt_t2 |       2008 |       2008 |       0 |    0 | 1812 |      0 |      2 |          5 |
+|     (cpu_inst)                                         | cpu_core_pipeline_dot4acc_memopt_h13b_timingopt_t2 |        978 |        978 |       0 |    0 | 1716 |      0 |      0 |          1 |
+|     data_mem_inst                                      |                                      bram_data_mem |        329 |        329 |       0 |    0 |    0 |      0 |      1 |          0 |
+|     dot4acc_pipeline_inst                              |                                   dot4acc_pipeline |        545 |        545 |       0 |    0 |   96 |      0 |      0 |          4 |
+|     instr_mem_inst                                     |                                     bram_instr_mem |        171 |        171 |       0 |    0 |    0 |      0 |      1 |          0 |
++--------------------------------------------------------+----------------------------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+
