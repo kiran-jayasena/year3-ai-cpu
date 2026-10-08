@@ -1,0 +1,9 @@
+Acceleration class,Primary bottleneck addressed,Expected instruction-count reduction,Control-flow reduction,Memory benefit,DSP cost,BRAM cost,LUT/FF cost,RTL complexity,Software complexity,Generality,Suitability for current workload
+AI-specific custom MAC/dot instruction,Scalar arithmetic and issue overhead,High for matched kernels,Low to Medium,Low,Medium to High,Low,Medium,Medium,Medium,Medium,High
+Packed INT8 SIMD,Scalar arithmetic and loop trip count,High when data is packed,Medium,Low to Medium,Medium to High,Low,Medium to High,Medium to High,Medium to High,Medium,High
+Tightly coupled MAC/dot unit,Arithmetic plus address/control overhead,High if work is batched,Medium to High,Medium if internally buffered,High,Low to Medium,High,High,High,Medium,High
+Dedicated convolution engine,Convolution arithmetic and scalar control,Very High for matching tiles,High,High when reuse is exploited,High,Medium to High,High,Very High,High,Low to Medium,Medium
+Scratchpad/local buffering,Potential data delivery and reuse,Low alone; Medium with accelerator,Low,Medium to High if delivery limited,Low to Medium,Medium to High,Medium,Medium,Medium,Medium,Low to Medium
+DMA/double buffering,Transfer instruction overhead and overlap,Medium for large blocks,Low to Medium,High only when transfer latency exists,Low,Medium,Medium to High,High,High,Medium,Low for current tiny tile
+Lightweight vector extension,Data parallel arithmetic and loop overhead,High for regular vectors,Medium to High,Low to Medium,High,Medium,High,High,High,High for varied kernels,Medium
+Hardware loops/loop buffer,Branches and loop bookkeeping,Medium to High in regular loops,High for supported loops,Low,Low to Medium,Low,Low to Medium,Medium,Medium,Medium,High
