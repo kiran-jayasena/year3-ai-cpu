@@ -1,0 +1,24 @@
+metric,value,units,classification,source
+useful_operations,36,MAC-equivalent,observed workload definition,KAN-58/KAN-62
+total_cycles,1464,cycles,measured,KAN-62 trace and counter
+retired_instructions,962,instructions,measured,KAN-62 trace and counter
+cpi,1.5218295,cycles/instruction,derived,KAN-62
+scalar_arithmetic,216,instructions,measured opcode count,KAN-62
+loads,109,instructions,measured opcode count,KAN-62
+stores,5,instructions,measured opcode count,KAN-62
+branches,216,instructions,measured opcode count,KAN-62
+jumps,151,instructions,measured opcode count,KAN-62
+addi_setup_address_loop,265,instructions,measured opcode classification,KAN-62
+dynamic_data_bytes,456,bytes,derived as 114 words x 4,profile convention
+arithmetic_intensity,0.0789473684,MAC/byte,derived 36/456,profile convention
+pipeline_fill,6,cycles,measured counter,KAN-62
+control_flush,216,cycles,measured counter,KAN-62
+memory_wait,0,cycles,measured counter,KAN-62
+data_hazard,0,cycles,measured counter,KAN-62
+load_use,0,cycles,measured counter,KAN-62
+residual_excess,280,cycles,derived and unclassified,KAN-62
+validated_frequency,93.0,MHz,repeatably timing-clean,KAN-56
+luts,2008,count,post-route,KAN-57
+ffs,1812,count,post-route,KAN-57
+dsp48,5,count,post-route,KAN-57
+bram_tiles,1,count,post-route,KAN-57
