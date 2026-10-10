@@ -1,0 +1,19 @@
+Metric,Scalar baseline,DOT4ACC/MAC version,Change
+Cycles,1464,232,-1232 (-84.15%)
+Retired instructions,962,207,-755 (-78.48%)
+CPI,1.5218295,1.1207729,-0.4010566
+Loads,109,24,-85 (-77.98%)
+Stores,5,5,0
+Branches,216,0,-216 (-100%)
+Jumps,151,0,-151 (-100%)
+ADDI/control/setup,265,6,-259 (-97.74%)
+Scalar arithmetic,216,0,-216 (-100%)
+DOT4ACC/MAC instructions,0,12 DOT4ACC / 0 MAC8,+12 specialised
+Memory-wait cycles,0,0,0
+Data-hazard stalls,0,0,0
+Load-use stalls,0,0,0
+Control-flush cycles,216,0,-216
+Dynamic bytes moved,456,116,-340 (-74.56%)
+MAC-equivalent operations,36,36,0
+Cycles/MAC-equivalent,40.6667,6.4444,-84.15%
+MAC-equivalent operations/cycle,0.024590,0.155172,6.31x
