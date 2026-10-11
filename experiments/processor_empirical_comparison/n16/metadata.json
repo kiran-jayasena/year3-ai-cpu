@@ -1,0 +1,9 @@
+﻿{
+    "vector_length":  16,
+    "expected_hex":  "0xFFFFFF96",
+    "expected_signed":  -106,
+    "mac_count":  16,
+    "operand_type":  "signed int8",
+    "accumulator_type":  "signed int32 modulo 2^32",
+    "layout":  "canonical signed values; one word per operand in reference memory images"
+}

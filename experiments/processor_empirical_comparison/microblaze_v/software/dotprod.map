@@ -1,0 +1,57 @@
+
+There are no discarded input sections
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+IMEM             0x00000000         0x00007000         xr
+DMEM             0x00007000         0x00001000         rw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+
+.text           0x00000000       0xc0
+ *(.text.start)
+ .text.start    0x00000000       0x14 C:\Users\kiran\AppData\Local\Temp\ccQWSqFz.o
+                0x00000000                _start
+ *(.text*)
+ .text          0x00000014        0x0 C:\Users\kiran\AppData\Local\Temp\ccQWSqFz.o
+ .text          0x00000014       0x64 C:\Users\kiran\AppData\Local\Temp\ccv3Wp8Y.o
+ .text.startup  0x00000078       0x48 C:\Users\kiran\AppData\Local\Temp\ccv3Wp8Y.o
+                0x00000078                main
+
+.rodata         0x00007000      0x120
+ *(.rodata*)
+ .rodata        0x00007000      0x120 C:\Users\kiran\AppData\Local\Temp\ccv3Wp8Y.o
+
+.rela.dyn       0x00007120        0x0
+ .rela.text.start
+                0x00007120        0x0 C:\Users\kiran\AppData\Local\Temp\ccQWSqFz.o
+
+.data           0x00007120        0x0
+ *(.data*)
+ .data          0x00007120        0x0 C:\Users\kiran\AppData\Local\Temp\ccQWSqFz.o
+ .data          0x00007120        0x0 C:\Users\kiran\AppData\Local\Temp\ccv3Wp8Y.o
+
+.bss            0x00007120        0x0
+ *(.bss*)
+ .bss           0x00007120        0x0 C:\Users\kiran\AppData\Local\Temp\ccQWSqFz.o
+ .bss           0x00007120        0x0 C:\Users\kiran\AppData\Local\Temp\ccv3Wp8Y.o
+ *(COMMON)
+                0x00007120                        . = ALIGN (0x10)
+                0x00008000                        _stack_top = (ORIGIN (DMEM) + LENGTH (DMEM))
+LOAD C:\Users\kiran\AppData\Local\Temp\ccQWSqFz.o
+LOAD C:\Users\kiran\AppData\Local\Temp\ccv3Wp8Y.o
+OUTPUT(dotprod.elf elf32-littleriscv)
+
+.riscv.attributes
+                0x00000000       0x37
+ .riscv.attributes
+                0x00000000       0x35 C:\Users\kiran\AppData\Local\Temp\ccQWSqFz.o
+ .riscv.attributes
+                0x00000035       0x37 C:\Users\kiran\AppData\Local\Temp\ccv3Wp8Y.o
+
+.comment        0x00000000       0x12
+ .comment       0x00000000       0x12 C:\Users\kiran\AppData\Local\Temp\ccv3Wp8Y.o
+                                 0x13 (size before relaxing)

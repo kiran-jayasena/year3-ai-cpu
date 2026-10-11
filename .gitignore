@@ -68,3 +68,34 @@ software/ai_reference/c_reference/build/
 
 # Local Vivado project folders
 vivado/
+
+# Year III processor-comparison generated tools and projects. These rules
+# preserve experiment source, scripts, compact reports and memory images while
+# keeping local Vivado/Vitis/XSim output out of Git.
+experiments/processor_empirical_comparison/**/.Xil/
+experiments/processor_empirical_comparison/**/xsim.dir/
+experiments/processor_empirical_comparison/**/vitis_workspace/
+experiments/processor_empirical_comparison/**/sim_export/
+experiments/processor_empirical_comparison/**/sim_ip_user_files/
+experiments/processor_empirical_comparison/**/synth_project/
+experiments/processor_empirical_comparison/microblaze_v/project/
+experiments/processor_empirical_comparison/microblaze_v/hsi_bsp/
+experiments/processor_empirical_comparison/microblaze_v/vivado_query*/
+experiments/processor_empirical_comparison/microblaze_v/sim_sources/
+experiments/processor_empirical_comparison/picorv32_upstream/
+
+# Local Vivado/XSA/compiler products. Source .sv/.S/.c/.py/.ps1/.tcl and
+# compact .mem/.mif/.coe evidence remain visible unless covered by a generated
+# directory rule above.
+*.xpr
+*.xsa
+*.elf
+*.bin
+*.o
+*.pb
+*.wdb
+*.jou
+*.log
+experiments/processor_empirical_comparison/vivado_query_short/
+experiments/processor_empirical_comparison/**/*.err
+status.txt

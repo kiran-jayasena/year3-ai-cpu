@@ -1,0 +1,3 @@
+N,result,correctness,total_cycles,retired_instructions,cycles_per_mac,instructions_per_mac,clock_mhz,execution_time_ns
+16,0xFFFFFF96,PASS,1040,115,65.0000,7.1875,93,11182.7957
+128,0x00000240,PASS,8208,899,64.1250,7.0234375,93,88258.0645

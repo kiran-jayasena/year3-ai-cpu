@@ -1,0 +1,1 @@
+Generated from existing n16/n128 vectors.csv; signed int8 operands; signed int32 accumulator; expected N16=0xFFFFFF96; N128=0x00000240.

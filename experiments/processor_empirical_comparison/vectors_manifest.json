@@ -1,0 +1,9 @@
+﻿{
+    "n16_expected_hex":  "0xFFFFFF96",
+    "n128_expected_hex":  "0x00000240",
+    "cases":  [
+                  "n16",
+                  "n128"
+              ],
+    "generator":  "PowerShell 5.1.26100.9444"
+}

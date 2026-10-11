@@ -1,0 +1,54 @@
+
+There are no discarded input sections
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+MEM              0x00000000         0x00010000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+
+.text           0x00000000      0x1dc
+ *(.text.start)
+ .text.start    0x00000000       0x14 C:\Users\kiran\AppData\Local\Temp\ccEI9fZL.o
+                0x00000000                _start
+ *(.text*)
+ .text          0x00000014        0x0 C:\Users\kiran\AppData\Local\Temp\ccEI9fZL.o
+ .text          0x00000014       0x64 C:\Users\kiran\AppData\Local\Temp\ccRHCRhd.o
+ .text.startup  0x00000078       0x44 C:\Users\kiran\AppData\Local\Temp\ccRHCRhd.o
+                0x00000078                main
+ *(.rodata*)
+ .rodata        0x000000bc      0x120 C:\Users\kiran\AppData\Local\Temp\ccRHCRhd.o
+
+.rela.dyn       0x000001dc        0x0
+ .rela.text.start
+                0x000001dc        0x0 C:\Users\kiran\AppData\Local\Temp\ccEI9fZL.o
+
+.data           0x000001dc        0x0
+ *(.data*)
+ .data          0x000001dc        0x0 C:\Users\kiran\AppData\Local\Temp\ccEI9fZL.o
+ .data          0x000001dc        0x0 C:\Users\kiran\AppData\Local\Temp\ccRHCRhd.o
+
+.bss            0x000001dc        0x0
+ *(.bss*)
+ .bss           0x000001dc        0x0 C:\Users\kiran\AppData\Local\Temp\ccEI9fZL.o
+ .bss           0x000001dc        0x0 C:\Users\kiran\AppData\Local\Temp\ccRHCRhd.o
+ *(COMMON)
+                0x000001e0                        . = ALIGN (0x10)
+                0x0000fff0                        _stack_top = ((ORIGIN (MEM) + LENGTH (MEM)) - 0x10)
+LOAD C:\Users\kiran\AppData\Local\Temp\ccEI9fZL.o
+LOAD C:\Users\kiran\AppData\Local\Temp\ccRHCRhd.o
+OUTPUT(pico.elf elf32-littleriscv)
+
+.riscv.attributes
+                0x00000000       0x37
+ .riscv.attributes
+                0x00000000       0x35 C:\Users\kiran\AppData\Local\Temp\ccEI9fZL.o
+ .riscv.attributes
+                0x00000035       0x37 C:\Users\kiran\AppData\Local\Temp\ccRHCRhd.o
+
+.comment        0x00000000       0x12
+ .comment       0x00000000       0x12 C:\Users\kiran\AppData\Local\Temp\ccRHCRhd.o
+                                 0x13 (size before relaxing)
