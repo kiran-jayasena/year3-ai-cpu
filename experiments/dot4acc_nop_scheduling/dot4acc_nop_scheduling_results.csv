@@ -1,0 +1,11 @@
+schedule,load_gap,dot_gap,generated_nops,cycles,retired,measured_nops,dot4acc,loads,stores,fetch_waits,memory_waits,hazard_stalls,load_use_stalls,pipeline_fill,output_pass,completed,status
+s6_d10_original,6,10,160,232,207,160,12,24,5,20,0,0,0,6,1,1,PASS
+s5_d9,5,9,136,208,183,136,12,24,5,20,0,0,0,6,1,1,PASS
+s4_d8,4,8,112,184,159,112,12,24,5,20,0,0,0,6,1,1,PASS
+s3_d7,3,7,88,160,135,88,12,24,5,20,0,0,0,6,1,1,PASS
+s2_d6,2,6,64,136,111,64,12,24,5,20,0,0,0,6,1,1,PASS
+s1_d5,1,5,40,112,87,40,12,24,5,20,0,0,0,6,1,1,PASS
+s0_d4,0,4,16,88,63,16,12,24,5,20,0,0,0,6,1,1,PASS
+s6_d0,6,0,120,192,167,120,12,24,5,20,0,0,0,6,1,1,PASS
+s0_d10,0,10,40,112,87,40,12,24,5,20,0,0,0,6,1,1,PASS
+s0_d0,0,0,0,72,47,0,12,24,5,20,0,0,0,6,1,1,PASS

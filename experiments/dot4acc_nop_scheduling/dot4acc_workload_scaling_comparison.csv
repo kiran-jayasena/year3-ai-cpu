@@ -1,0 +1,7 @@
+schedule,workload,mac_equivalent,cycles,retired,nops,dot4acc,loads,stores,fetch_waits,memory_waits,hazard_stalls,load_use_stalls,pipeline_fill,cycles_per_mac,instructions_per_mac,correctness,comparison_note
+original_scaling,small,16,39,13,0,4,8,1,15,1,1,1,6,2.437500,0.812500,PASS,Existing KAN-360 compact load-load-DOT schedule already has no scheduled NOPs
+nop_optimised_scaling,small,16,39,13,0,4,8,1,15,1,1,1,6,2.437500,0.812500,PASS,No change; baseline scaling schedule is already NOP-free
+original_scaling,medium,64,135,49,0,16,32,1,51,1,1,1,6,2.109375,0.765625,PASS,Existing KAN-360 compact load-load-DOT schedule already has no scheduled NOPs
+nop_optimised_scaling,medium,64,135,49,0,16,32,1,51,1,1,1,6,2.109375,0.765625,PASS,No change; baseline scaling schedule is already NOP-free
+original_scaling,large,128,263,97,0,32,64,1,99,1,1,1,6,2.054688,0.757812,PASS,Existing KAN-360 compact load-load-DOT schedule already has no scheduled NOPs
+nop_optimised_scaling,large,128,263,97,0,32,64,1,99,1,1,1,6,2.054688,0.757812,PASS,No change; baseline scaling schedule is already NOP-free

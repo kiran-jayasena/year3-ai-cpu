@@ -1,0 +1,2 @@
+cycles,retired,nops,dot4acc,loads,stores,fetch_waits,memory_waits,hazard_stalls,load_use_stalls,pipeline_fill,output_pass,completed
+72,47,0,12,24,5,20,0,0,0,6,1,1
